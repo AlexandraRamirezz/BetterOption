@@ -50,10 +50,6 @@ span {
     background-color: var(--color-white);
 }
 
-.ul-espacio {
-    padding-left: 250px;
-}
-
 .nav-btn {
     background-color: var(--color-white);
 }
@@ -63,6 +59,15 @@ span {
 /*VISTA MÓVIL */
 
 @media (max-width: 600px) {
+    .ul-espacio {
+        padding-left: 100px;
+    }
+
+    .inicio-fondo {
+        background-color: rgba(0, 0, 0, 0.764);
+        padding: 40px;
+    }
+
     .info {
         display: grid;
         gap: 20px;
@@ -74,11 +79,27 @@ span {
         "plano-mapa"
     }
 }
+@media  (max-width: 575px) {
+    .pad-ubi {
+        padding-top: 50px;
+    }
+}
+
 
 
 /*VISTA TABLET*/
 
 @media (min-width: 601px) and (max-width: 900px) {
+    .ul-espacio {
+        padding-left: 220px;
+        
+    }
+
+    .inicio-fondo {
+        background-color: rgba(0, 0, 0, 0.764);
+        padding: 138px;
+    }
+    
     .info {
         display: grid;
         gap: 20px;
@@ -89,12 +110,45 @@ span {
         "plano-mapa plano-mapa"
     }
 }
+@media (min-width: 576px) and (max-width: 767px) {
+    .pos-logo {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
 
+
+@media (min-width: 351px) and (max-width: 767px) {
+    .img-pos-inmueble {
+        text-align: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .img-pos-inmueble {
+        display: flex;
+    }
+}
+@media (min-width: 768px) {
+    .img-pos-inmueble {
+        display: flex;
+    }
+}
 
 
 /* VISTA DESK */
 
 @media (min-width: 901px) {
+    .ul-espacio {
+        padding-left: 90px;
+    }
+
+    .inicio-fondo {
+        background-color: rgba(0, 0, 0, 0.764);
+        padding: 188px;
+    }
+
     .info {
         display: grid;
         gap: 20px;
@@ -116,11 +170,6 @@ span {
     background-size: cover;
 }
 
-.inicio-fondo {
-    background-color: rgba(0, 0, 0, 0.764);
-    padding: 188px;
-}
-
 .div-inmueble-reciente {
     display: flex;
     justify-content: space-between;
@@ -130,6 +179,11 @@ span {
 
 
 /* Quienes somos */
+
+.inmuebles-fondo {
+    background-color: rgba(0, 0, 0, 0.648);
+    padding: 58px;
+}
 
 .fondo-nosotros-img {
     background-image: url("../img/bloques/nosotros.jpg");
@@ -223,11 +277,6 @@ span {
     background-image: url("../img/bloques/inmuebles.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.inmuebles-fondo {
-    background-color: rgba(0, 0, 0, 0.648);
-    padding: 58px;
 }
 
 .ordenar-por {

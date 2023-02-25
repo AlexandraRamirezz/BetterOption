@@ -137,7 +137,7 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                            <input class="form-check-input" type="checkbox" value="checkbox" id="invalidCheck"
                                                 required />
                                             <label class="form-check-label" for="invalidCheck">Acepto
                                                 todos los términos y
@@ -289,13 +289,13 @@
             class="plano-mapa row row-cols-1 row-cols-sm-2 row-cols-md-2 py-4 my-1 d-flex justify-content-center border-top">
             <div class="col px-5">
                 <h5>Planos:</h5>
-                <img class="img-fluid" src="../img/info-inmuebles/inmueble1/plano.jpg" alt="planos-inmueble1">
+                <img style="width: 100%; height: 100%;" class="img-fluid" src="../img/info-inmuebles/inmueble1/plano.jpg" alt="planos-inmueble1">
             </div>
-            <div class="col px-5">
+            <div class="col px-5 pad-ubi">
                 <h5>Ubicación:</h5>
-                <iframe style="width: 100%;"
+                <iframe style="width: 100%; height: 100%;"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d289.93734080378306!2d-77.03267832076001!3d-12.11787730344424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c817c32b7a5b%3A0xba03c2680dc33a9e!2sHotel%20Britania%20Miraflores!5e0!3m2!1ses-419!2spe!4v1677307311275!5m2!1ses-419!2spe"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    style="border:0;" allowfullscreen="ubicacion" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
@@ -309,16 +309,16 @@
     <!-- footer -->
     <footer class="container fondo-footer">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-4 my-4 border-top">
-            <div class="text-center">
-                <div class="footer-logo">
-                    <a href="../index.html"">
+            <div class="text-center pos-logo">
+                <div>
+                    <a href="../index.html">
                     <img src=" ../img/logo.png" alt="logo">
                     </a>
                     <h4><span>B</span>etter<span>O</span>ption</a></h4>
                 </div>
             </div>
             <div class="col mb-3"></div>
-            <div class="col mb-3 footer-logo">
+            <div class="col mb-3">
                 <h5>Navegación</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
@@ -335,7 +335,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col mb-3 footer-logo">
+            <div class="col mb-3">
                 <h5>Redes</h5>
                 <ul>
                     <a target="_blank" href="https://www.whatsapp.com/"><i
