@@ -1,0 +1,292 @@
+:root {
+    --color-primario: #212529;
+    --color-secundario: #64a464;
+    --color-terciario: #f3f0ef;
+    --color-cuaternario: #6d6d6b20;
+    --color-white: white;
+    --color-black: black;
+}
+
+.cambio-color {
+    color: var(--color-secundario);
+}
+
+.padding-section {
+    padding: 25px;
+    border: solid 2px var(--color-cuaternario);
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+
+
+/* barra navegadora */
+
+.nav-bar {
+    background-color: var(--color-primario);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+span {
+    color: var(--color-secundario);
+}
+
+.h1-edicion-logo {
+    font-weight: bold;
+    font-size: 28px;
+    color: var(--color-white);
+    padding-left: 30px;
+}
+
+.nav-bar-edicion {
+    color: var(--color-white);
+    padding: 5px;
+}
+
+.nav-bar-edicion:hover {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.ul-espacio {
+    padding-left: 250px;
+}
+
+.nav-btn {
+    background-color: var(--color-white);
+}
+
+
+
+/*VISTA MÓVIL */
+
+@media (max-width: 600px) {
+    .info {
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+        "descripcion"
+        "botones"
+        "ofrece"
+        "datos"
+        "plano-mapa"
+    }
+}
+
+
+/*VISTA TABLET*/
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .info {
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+        "descripcion botones"
+        "ofrece ofrece"
+        "datos datos"
+        "plano-mapa plano-mapa"
+    }
+}
+
+
+
+/* VISTA DESK */
+
+@media (min-width: 901px) {
+    .info {
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+        "descripcion botones"
+        "ofrece ofrece"
+        "datos datos"
+        "plano-mapa plano-mapa"
+    }
+}
+
+
+
+/* inicio */
+
+.fondo-inicio-img {
+    background-image: url("../img/inicio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inicio-fondo {
+    background-color: rgba(0, 0, 0, 0.764);
+    padding: 188px;
+}
+
+.div-inmueble-reciente {
+    display: flex;
+    justify-content: space-between;
+    background-size: cover;
+}
+
+
+
+/* Quienes somos */
+
+.fondo-nosotros-img {
+    background-image: url("../img/bloques/nosotros.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nosotros-fondo {
+    background-color: rgba(0, 0, 0, 0.648);
+    padding: 58px;
+}
+
+.historia {
+    border-radius: 35px;
+    width: 400px;
+}
+
+.separacion {
+    padding-right: 20px;
+}
+
+.color-preg {
+    background-color: var(--color-secundario);
+    color: var(--color-white);
+    margin: auto;
+    border-radius: 5px;
+}
+
+.color-resp {
+    background-color: var(--color-terciario);
+    border-radius: 15px;
+    transition: 0.75s all ease-in-out;
+}
+
+.color-resp:hover {
+    transform: scale(0.9);
+}
+
+.img-personal {
+    width: 250px;
+}
+
+.personal-hover {
+    transition: 0.75s all ease-in-out;
+}
+
+.personal-hover:hover {
+    transform: scale(0.9);
+}
+
+.img-testimonio {
+    background-size: cover;
+    height: 420px;
+    object-fit: cover;
+}
+
+.cambio-letra {
+    color: var(--color-primario);
+    background-color: rgba(255, 255, 255, 0.82);
+    padding: 10px;
+}
+
+
+
+/* contacto */
+
+.fondo-contacto-img {
+    background-image: url("../img/bloques/contacto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacto-fondo {
+    background-color: rgba(0, 0, 0, 0.648);
+    padding: 58px;
+}
+
+.img.contacto {
+    width: 300px;
+}
+
+.bg-color {
+    background-color: var(--color-terciario);
+}
+
+
+
+/* inmuebles */
+
+.fondo-inmuebles-img {
+    background-image: url("../img/bloques/inmuebles.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inmuebles-fondo {
+    background-color: rgba(0, 0, 0, 0.648);
+    padding: 58px;
+}
+
+.ordenar-por {
+    padding: 5px;
+    background-color: var(--color-white);
+    border-radius: 4px;
+}
+
+.page-link {
+    color: var(--color-black);
+}
+
+.pagination {
+    --bs-pagination-color: var(--color-secundario);
+    --bs-pagination-hover-color: var(--color-secundario);
+    --bs-pagination-focus-color: var(--color-secundario);
+    --bs-pagination-active-bg: var(--color-secundario);
+    --bs-pagination-active-border-color: var(--color-secundario)  !important;
+}
+
+
+.imgCarousel {
+    height: 520px;
+    object-fit: cover;
+}
+
+.descripcion {
+    grid-area: descripcion;
+}
+.botones {
+    grid-area: botones;
+}
+.ofrece {
+    grid-area: ofrece;
+}
+.datos {
+    grid-area: datos;
+}
+.plano-mapa {
+    grid-area: plano-mapa;
+}
+
+
+
+/* footer */
+
+.padding-div {
+   padding: 20px;
+}
+
+.nav-item {
+    padding-left: 30px;
+}
+
+.nav-icono {
+    color: var(--color-black);
+    padding-right: 2px;
+}
+
+.fondo-footer {
+    background-color: var(--color-cuaternario);
+}

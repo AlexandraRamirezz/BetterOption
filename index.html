@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetterOption | Inicio</title>
+
+    <link href="img/favicon.png" rel="icon">
+
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <!-- Barra navegadora -->
+    <nav class="navbar navbar-expand-lg nav-bar">
+        <div class="container-fluid">
+            <h1><a class="navbar-brand nav-bar h1-edicion-logo"
+                    href="index.html"><span>B</span>etter<span>O</span>ption</a>
+            </h1>
+            <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ul-espacio">
+                    <li class="nav-item">
+                        <a class="nav-link nav-bar-edicion" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-bar-edicion" aria-current="page" href="html/inmuebles.html">Inmuebles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-bar-edicion" href="html/quienessomos.html">Quiénes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-bar-edicion" href="html/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Ingresar la categoría"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </nav>
+
+
+
+    <!-- bloque -->
+    <div class="p-6 text-center bg-image fondo-inicio-img">
+        <div class="mask inicio-fondo">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white">
+                    <h2 class="mb-3"><span>B</span>etter<span>O</span>ption</h2>
+                    <h4 class="mb-3">En donde se encuentra tu futuro hogar soñado</h4>
+                    <p>BetterOption es un sitio web diseñado para ayudar a los usuarios a encontrar y adquirir
+                        propiedades inmobiliarias, ya sea para comprar o alquilar. Tenemos una interfaz de usuario
+                        intuitiva y fácil de usar que permite buscar propiedades según la ubicación, el tipo de
+                        propiedad y las comodidades que desean. Además, ofrecemos servicios adicionales como la
+                        posibilidad de programar visitas a la propiedad. </p>
+                        <p>¿Necesitas más información sobre nuestros servicios?</p>
+                    <br><br>
+                    <a class="btn btn-outline-light btn-lg" href="html/contacto.html" role="button">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- más recientes -->
+    <div class="container padding-section">
+        <h5 class="text-center cambio-color">INMUEBLES MÁS RECIENTES</h5>
+        <br>
+        <p>En este apartado, encontrarás inmuebles recientemente insertados en la página. Usualmente ofrecen una
+            experiencia moderna y no presentan una larga fila de solicitudes pendientes. BetterOption te facilita poseer
+            tu inmueble soñado de forma rápida y eficaz con esta modalidad.</p>
+        <br>
+        <div class="card mb-3 div-inmueble-reciente">
+            <div class="row g-0">
+                <div class="col-md-3 d-flex">
+                    <img src="img/inmuebles/diseño-1.jpg" class="img-fluid rounded-start" alt="diseño-1">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <h5 class="card-title">Departamento amoblado en Miraflores | $900 mensuales</h5>
+                        <p class="card-text">Departamento recién construido con un diseño de techos altos y
+                            ventanas de piso a techo que brindan mucha luz natural y vistas
+                            de la ciudad. La cocina está equipada con electrodomésticos de acero
+                            inoxidable, mientras que el baño principal cuenta
+                            con una bañera de inmersión. El edificio cuenta con comodidades modernas, como una terraza
+                            en la azotea, un gimnasio y una piscina climatizada.</p>
+                        <p class="card-text"><small class="text-muted">Publicado hace 48 minutos | 2 solicitudes
+                                pendientes</small></p>
+                        <button class="btn btn-light"><a class="text-decoration-none text-secondary"
+                                href="html/info-inmuebles.html">Más información</a></button>
+                        <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal5">Contactar al proveedor</button>
+
+                        <!-- Enviar solicitud -->
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title fs-5" id="exampleModalLabel">Enviar solicitud
+                                            al proveedor</h2>
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body bg-color p-4">
+                                        <form>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example1">Nombre</label>
+                                                <input type="text" id="form4Example1" class="form-control" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail" class="form-label">Correo
+                                                    electrónico</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail"
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example2">Asunto</label>
+                                                <input type="text" id="form4Example2" class="form-control" />
+                                            </div>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example3">Mensaje</label>
+                                                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="invalidCheck" required />
+                                                    <label class="form-check-label" for="invalidCheck">Acepto todos los
+                                                        términos y
+                                                        condiciones
+                                                    </label>
+                                                    <div class="invalid-feedback">
+                                                        Debe estar de acuerdo antes de enviar.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <button class="btn btn-success" type="submit">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3 div-inmueble-reciente">
+            <div class="row g-0">
+                <div class="col-md-3 d-flex">
+                    <img src="img/inmuebles/diseño-2.png" class="img-fluid rounded-start" alt="diseño-2">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <h5 class="card-title">Casa amoblada en La Molina | $95,700</h5>
+                        <p class="card-text">Casa de lujo recientemente construida en un barrio exclusivo con un diseño
+                            de plan de planta abierto con techos altos y detalles de madera y piedra en todas partes. La
+                            cocina gourmet cuenta con encimeras de granito, electrodomésticos de alta gama y una
+                            despensa de almacenamiento. Las habitaciones son amplias y luminosas, con baños privados y
+                            vestidores. Incluye una piscina, así como un área de barbacoa.</p>
+                        <p class="card-text"><small class="text-muted">Publicado hace 1 hora | 3 solicitudes
+                                pendientes</small></p>
+                        <button class="btn btn-light"><a class="text-decoration-none text-secondary" href="">Más
+                                información</a></button>
+                        <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal5">Contactar al proveedor</button>
+
+                        <!-- Enviar solicitud -->
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title fs-5" id="exampleModalLabel">Enviar solicitud
+                                            al proveedor</h2>
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body bg-color p-4">
+                                        <form>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example1">Nombre</label>
+                                                <input type="text" id="form4Example1" class="form-control" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail" class="form-label">Correo
+                                                    electrónico</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail"
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example2">Asunto</label>
+                                                <input type="text" id="form4Example2" class="form-control" />
+                                            </div>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example3">Mensaje</label>
+                                                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="invalidCheck" required />
+                                                    <label class="form-check-label" for="invalidCheck">Acepto todos los
+                                                        términos y
+                                                        condiciones
+                                                    </label>
+                                                    <div class="invalid-feedback">
+                                                        Debe estar de acuerdo antes de enviar.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <button class="btn btn-success" type="submit">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3 div-inmueble-reciente">
+            <div class="row g-0">
+                <div class="col-md-3 d-flex">
+                    <img src="img/inmuebles/diseño-3.jpg" class="img-fluid rounded-start" alt="diseño-3">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <h5 class="card-title">Departamento amoblado en Surquillo | $860 mensuales</h5>
+                        <p class="card-text">Departamento contemporáneo recién renovado en un vecindario de moda con un
+                            diseño industrial con techos altos y detalles de ladrillo expuesto. La cocina de concepto
+                            abierto está equipada con electrodomésticos de acero inoxidable y encimeras de granito. El
+                            espacio de estar es amplio y luminoso, con ventanas grandes que brindan vistas panorámicas. El edificio cuenta con una terraza en la azotea compartida con vistas de la ciudad.
+                        </p>
+                        <p class="card-text"><small class="text-muted">Publicado hace 2 horas | 9 solicitudes
+                                pendientes</small></p>
+                        <button class="btn btn-light"><a class="text-decoration-none text-secondary" href="">Más
+                                información</a></button>
+                        <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2">Contactar al proveedor</button>
+
+                        <!-- Enviar solicitud -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title fs-5" id="exampleModalLabel">Enviar solicitud
+                                            al proveedor</h2>
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body bg-color p-4">
+                                        <form>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example1">Nombre</label>
+                                                <input type="text" id="form4Example1" class="form-control" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail" class="form-label">Correo
+                                                    electrónico</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail"
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example2">Asunto</label>
+                                                <input type="text" id="form4Example2" class="form-control" />
+                                            </div>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example3">Mensaje</label>
+                                                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="invalidCheck" required />
+                                                    <label class="form-check-label" for="invalidCheck">Acepto todos los
+                                                        términos y
+                                                        condiciones
+                                                    </label>
+                                                    <div class="invalid-feedback">
+                                                        Debe estar de acuerdo antes de enviar.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <button class="btn btn-success" type="submit">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-light"><a class="text-decoration-none text-secondary" href="">Ver más</a></button>        
+        </div>
+    </div>
+
+
+
+    <!-- en oferta -->
+    <div class="container padding-section">
+        <h5 class="text-center cambio-color">INMUEBLES EN OFERTA</h5>
+        <br>
+        <p>En este apartado, encontrarás inmuebles en oferta de la página. Significa una gran
+            oportunidad a los usuarios que buscan una propiedad a un precio más bajo a comparación de los demás
+            inmuebles. BetterOption te facilita poseer tu inmueble soñado acorde a las facilidades económicas que
+            presentes.</p>
+        <br>
+        <div class="card mb-3 div-inmueble-reciente">
+            <div class="row g-0">
+                <div class="col-md-3 d-flex">
+                    <img src="img/inmuebles/diseño-4.jpg" class="img-fluid rounded-start" alt="diseño-4">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <h5 class="card-title">Casa amoblada en Puente Piedra | $40,200</h5>
+                        <p class="card-text">Casa en necesidad de renovación en un barrio tranquilo con un gran potencial. La casa tiene una distribución clásica con tres dormitorios y dos baños, así como una cocina y un comedor separados y una amplia sala de estar. El patio trasero es espacioso y ofrece un gran espacio para jardinería y entretenimiento. Esta propiedad es perfecta para alguien que busca una casa asequible con un gran potencial de revalorización.</p>
+                        <p class="card-text"><small class="text-muted">Publicado hace 5 horas | 5 solicitudes pendientes</small></p>
+                        <button class="btn btn-light"><a class="text-decoration-none text-secondary" href="">Más
+                                información</a></button>
+                        <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal5">Contactar al proveedor</button>
+
+                        <!-- Enviar solicitud -->
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title fs-5" id="exampleModalLabel">Enviar solicitud
+                                            al proveedor</h2>
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body bg-color p-4">
+                                        <form>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example1">Nombre</label>
+                                                <input type="text" id="form4Example1" class="form-control" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail" class="form-label">Correo
+                                                    electrónico</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail"
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example2">Asunto</label>
+                                                <input type="text" id="form4Example2" class="form-control" />
+                                            </div>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example3">Mensaje</label>
+                                                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="invalidCheck" required />
+                                                    <label class="form-check-label" for="invalidCheck">Acepto todos los
+                                                        términos y
+                                                        condiciones
+                                                    </label>
+                                                    <div class="invalid-feedback">
+                                                        Debe estar de acuerdo antes de enviar.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <button class="btn btn-success" type="submit">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3 div-inmueble-reciente">
+            <div class="row g-0">
+                <div class="col-md-3 d-flex">
+                    <img src="img/inmuebles/diseño-5.jpeg" class="img-fluid rounded-start" alt="diseño-5">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <h5 class="card-title">Casa amoblada en Santiago de Surco | $30,000</h5>
+                        <p class="card-text">Casa pequeña de un dormitorio pero encantadora, se encuentra en una ciudad universitaria en el centro de la ciudad. La casa cuenta con una sala de estar con chimenea, una cocina y comedor separados, y un baño completo. El patio trasero es pequeño pero privado y ofrece un espacio para relajarse al aire libre. El precio se ha reducido para reflejar el tamaño más pequeño de la casa.</p>
+                        <p class="card-text"><small class="text-muted">Publicado hace 8 horas | 9 solicitudes pendientes</small></p>
+                        <button class="btn btn-light"><a class="text-decoration-none text-secondary" href="">Más
+                                información</a></button>
+                        <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal5">Contactar al proveedor</button>
+
+                        <!-- Enviar solicitud -->
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title fs-5" id="exampleModalLabel">Enviar solicitud
+                                            al proveedor</h2>
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body bg-color p-4">
+                                        <form>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example1">Nombre</label>
+                                                <input type="text" id="form4Example1" class="form-control" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail" class="form-label">Correo
+                                                    electrónico</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail"
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example2">Asunto</label>
+                                                <input type="text" id="form4Example2" class="form-control" />
+                                            </div>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example3">Mensaje</label>
+                                                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="invalidCheck" required />
+                                                    <label class="form-check-label" for="invalidCheck">Acepto todos los
+                                                        términos y
+                                                        condiciones
+                                                    </label>
+                                                    <div class="invalid-feedback">
+                                                        Debe estar de acuerdo antes de enviar.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <button class="btn btn-success" type="submit">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3 div-inmueble-reciente">
+            <div class="row g-0">
+                <div class="col-md-3 d-flex">
+                    <img src="img/inmuebles/diseño-6.jpg" class="img-fluid rounded-start" alt="diseño-6">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <h5 class="card-title">Departamento amoblado en Cercado de Lima | $640 mensuales</h5>
+                        <p class="card-text">Departamento con excelentes vistas pero en una ubicación menos deseable, tiene una vista impresionante de la ciudad y cuenta con una cocina abierta y una sala de estar con mucha luz natural. Sin embargo, la ubicación no es ideal, ya que está ubicado en una calle concurrida y cerca de una zona industrial. El precio se ha reducido para reflejar la ubicación menos deseable.</p>
+                        <p class="card-text"><small class="text-muted">Publicado hace 10 horas | 12 solicitudes pendientes</small></p>
+                        <button class="btn btn-light"><a class="text-decoration-none text-secondary" href="">Más
+                                información</a></button>
+                        <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal5">Contactar al proveedor</button>
+
+                        <!-- Enviar solicitud -->
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title fs-5" id="exampleModalLabel">Enviar solicitud
+                                            al proveedor</h2>
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body bg-color p-4">
+                                        <form>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example1">Nombre</label>
+                                                <input type="text" id="form4Example1" class="form-control" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail" class="form-label">Correo
+                                                    electrónico</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail"
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example2">Asunto</label>
+                                                <input type="text" id="form4Example2" class="form-control" />
+                                            </div>
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form4Example3">Mensaje</label>
+                                                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="invalidCheck" required />
+                                                    <label class="form-check-label" for="invalidCheck">Acepto todos los
+                                                        términos y
+                                                        condiciones
+                                                    </label>
+                                                    <div class="invalid-feedback">
+                                                        Debe estar de acuerdo antes de enviar.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <button class="btn btn-success" type="submit">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-light"><a class="text-decoration-none text-secondary" href="">Ver más</a></button>        
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="container fondo-footer">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-4 my-4 border-top">
+            <div class="text-center">
+                <div class="footer-logo">
+                    <a href="index.html"">
+                    <img src=" img/logo.png" alt="logo">
+                    </a>
+                    <h4><span>B</span>etter<span>O</span>ption</a></h4>
+                </div>
+            </div>
+            <div class="col mb-3"></div>
+            <div class="col mb-3 footer-logo">
+                <h5>Navegación</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="index.html" class="nav-link p-0 text-muted">Inicio</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="html/inmuebles.html" class="nav-link p-0 text-muted">Inmuebles</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="html/quienessomos.html" class="nav-link p-0 text-muted">Quiénes somos</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="html/contacto.html" class="nav-link p-0 text-muted">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col mb-3 footer-logo">
+                <h5>Redes</h5>
+                <ul>
+                    <a target="_blank" href="https://www.whatsapp.com/"><i
+                            class="fa-brands fa-whatsapp fa-2x nav-icono"></i></a>
+                    <a target="_blank" href="https://www.facebook.com"><i
+                            class="fa-brands fa-facebook fa-2x nav-icono"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/"><i
+                            class="fa-brands fa-instagram fa-2x nav-icono"></i></a>
+                    <a target="_blank" href="https://web.telegram.org/z/"><i
+                            class="fa-brands fa-telegram fa-2x nav-icono"></i></a>
+                </ul>
+            </div>
+        </div>
+        <p class="text-muted text-center">Copyright © 2023 - Todos los derechos reservados</p>
+        <p class="text-muted text-center">Desarrollado por<span>: Alexandra Ramirez.</span></p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
