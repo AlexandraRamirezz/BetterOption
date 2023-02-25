@@ -207,8 +207,8 @@ span {
     padding: 58px;
 }
 
-.img.contacto {
-    width: 300px;
+.img-contacto {
+    width: 100%;
 }
 
 .bg-color {
