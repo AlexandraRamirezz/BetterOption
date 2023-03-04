@@ -1,341 +1,287 @@
-:root {
-    --color-primario: #212529;
-    --color-secundario: #64a464;
-    --color-terciario: #f3f0ef;
-    --color-cuaternario: #6d6d6b20;
-    --color-white: white;
-    --color-black: black;
-}
-
+@charset "UTF-8";
+/* general */
 .cambio-color {
-    color: var(--color-secundario);
+  color: #64a464;
 }
 
 .padding-section {
-    padding: 25px;
-    border: solid 2px var(--color-cuaternario);
-    margin-top: 30px;
-    border-radius: 5px;
-}
-
-
-
-/* barra navegadora */
-
-.nav-bar {
-    background-color: var(--color-primario);
-    position: sticky;
-    top: 0;
-    z-index: 10;
+  padding: 25px;
+  border: solid 2px rgba(109, 109, 107, 0.1254901961);
+  margin-top: 30px;
+  border-radius: 5px;
 }
 
 span {
-    color: var(--color-secundario);
+  color: #64a464;
+}
+
+/* header */
+.nav-bar {
+  background-color: #212529;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .h1-edicion-logo {
-    font-weight: bold;
-    font-size: 28px;
-    color: var(--color-white);
-    padding-left: 30px;
+  font-weight: bold;
+  font-size: 28px;
+  color: white;
+  padding-left: 30px;
 }
 
 .nav-bar-edicion {
-    color: var(--color-white);
-    padding: 5px;
+  color: white;
+  padding: 5px;
 }
-
 .nav-bar-edicion:hover {
-    color: var(--color-black);
-    background-color: var(--color-white);
+  color: black;
+  background-color: white;
 }
 
 .nav-btn {
-    background-color: var(--color-white);
+  background-color: white;
 }
-
-
-
-/*VISTA MÓVIL */
-
-@media (max-width: 600px) {
-    .ul-espacio {
-        padding-left: 100px;
-    }
-
-    .inicio-fondo {
-        background-color: rgba(0, 0, 0, 0.764);
-        padding: 40px;
-    }
-
-    .info {
-        display: grid;
-        gap: 20px;
-        grid-template-areas:
-        "descripcion"
-        "botones"
-        "ofrece"
-        "datos"
-        "plano-mapa"
-    }
-}
-@media  (max-width: 575px) {
-    .pad-ubi {
-        padding-top: 50px;
-    }
-}
-
-
-
-/*VISTA TABLET*/
-
-@media (min-width: 601px) and (max-width: 900px) {
-    .ul-espacio {
-        padding-left: 220px;
-        
-    }
-
-    .inicio-fondo {
-        background-color: rgba(0, 0, 0, 0.764);
-        padding: 138px;
-    }
-    
-    .info {
-        display: grid;
-        gap: 20px;
-        grid-template-areas:
-        "descripcion botones"
-        "ofrece ofrece"
-        "datos datos"
-        "plano-mapa plano-mapa"
-    }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-    .pos-logo {
-        padding-bottom: 20px;
-        display: flex;
-        justify-content: flex-start;
-    }
-}
-
-
-@media (min-width: 351px) and (max-width: 767px) {
-    .img-pos-inmueble {
-        text-align: center;
-    }
-}
-
-@media (max-width: 350px) {
-    .img-pos-inmueble {
-        display: flex;
-    }
-}
-@media (min-width: 768px) {
-    .img-pos-inmueble {
-        display: flex;
-    }
-}
-
-
-/* VISTA DESK */
-
-@media (min-width: 901px) {
-    .ul-espacio {
-        padding-left: 90px;
-    }
-
-    .inicio-fondo {
-        background-color: rgba(0, 0, 0, 0.764);
-        padding: 188px;
-    }
-
-    .info {
-        display: grid;
-        gap: 20px;
-        grid-template-areas:
-        "descripcion botones"
-        "ofrece ofrece"
-        "datos datos"
-        "plano-mapa plano-mapa"
-    }
-}
-
-
 
 /* inicio */
-
 .fondo-inicio-img {
-    background-image: url("../img/inicio.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../img/inicio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .div-inmueble-reciente {
-    display: flex;
-    justify-content: space-between;
-    background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  background-size: cover;
 }
-
-
-
-/* Quienes somos */
-
-.inmuebles-fondo {
-    background-color: rgba(0, 0, 0, 0.648);
-    padding: 58px;
-}
-
-.fondo-nosotros-img {
-    background-image: url("../img/bloques/nosotros.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.nosotros-fondo {
-    background-color: rgba(0, 0, 0, 0.648);
-    padding: 58px;
-}
-
-.historia {
-    border-radius: 35px;
-    width: 400px;
-}
-
-.separacion {
-    padding-right: 20px;
-}
-
-.color-preg {
-    background-color: var(--color-secundario);
-    color: var(--color-white);
-    margin: auto;
-    border-radius: 5px;
-}
-
-.color-resp {
-    background-color: var(--color-terciario);
-    border-radius: 15px;
-    transition: 0.75s all ease-in-out;
-}
-
-.color-resp:hover {
-    transform: scale(0.9);
-}
-
-.img-personal {
-    width: 250px;
-}
-
-.personal-hover {
-    transition: 0.75s all ease-in-out;
-}
-
-.personal-hover:hover {
-    transform: scale(0.9);
-}
-
-.img-testimonio {
-    background-size: cover;
-    height: 420px;
-    object-fit: cover;
-}
-
-.cambio-letra {
-    color: var(--color-primario);
-    background-color: rgba(255, 255, 255, 0.82);
-    padding: 10px;
-}
-
-
-
-/* contacto */
-
-.fondo-contacto-img {
-    background-image: url("../img/bloques/contacto.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.contacto-fondo {
-    background-color: rgba(0, 0, 0, 0.648);
-    padding: 58px;
-}
-
-.img-contacto {
-    width: 100%;
-}
-
-.bg-color {
-    background-color: var(--color-terciario);
-}
-
-
 
 /* inmuebles */
+.inmuebles-fondo {
+  background-color: rgba(0, 0, 0, 0.648);
+  padding: 58px;
+}
 
 .fondo-inmuebles-img {
-    background-image: url("../img/bloques/inmuebles.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../img/bloques/inmuebles.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .ordenar-por {
-    padding: 5px;
-    background-color: var(--color-white);
-    border-radius: 4px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 4px;
 }
 
 .page-link {
-    color: var(--color-black);
+  color: black;
 }
 
 .pagination {
-    --bs-pagination-color: var(--color-secundario);
-    --bs-pagination-hover-color: var(--color-secundario);
-    --bs-pagination-focus-color: var(--color-secundario);
-    --bs-pagination-active-bg: var(--color-secundario);
-    --bs-pagination-active-border-color: var(--color-secundario)  !important;
+  --bs-pagination-color: #64a464;
+  --bs-pagination-hover-color: #64a464;
+  --bs-pagination-focus-color: #64a464;
+  --bs-pagination-active-bg: #64a464;
+  --bs-pagination-active-border-color: #64a464 !important;
 }
 
-
+/* info - inmuebles */
 .imgCarousel {
-    height: 520px;
-    object-fit: cover;
+  height: 520px;
+  object-fit: cover;
 }
 
 .descripcion {
-    grid-area: descripcion;
+  grid-area: descripcion;
 }
+
 .botones {
-    grid-area: botones;
+  grid-area: botones;
 }
+
 .ofrece {
-    grid-area: ofrece;
+  grid-area: ofrece;
 }
+
 .datos {
-    grid-area: datos;
+  grid-area: datos;
 }
+
 .plano-mapa {
-    grid-area: plano-mapa;
+  grid-area: plano-mapa;
 }
 
+/* quienes somos */
+.fondo-nosotros-img {
+  background-image: url("../img/bloques/nosotros.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.nosotros-fondo {
+  background-color: rgba(0, 0, 0, 0.648);
+  padding: 58px;
+}
+
+.historia {
+  border-radius: 35px;
+  width: 400px;
+}
+
+.separacion {
+  padding-right: 20px;
+}
+
+.color-preg {
+  background-color: #64a464;
+  color: white;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.color-resp {
+  background-color: #f3f0ef;
+  border-radius: 15px;
+  transition: 0.75s all ease-in-out;
+}
+.color-resp:hover {
+  transform: scale(0.9);
+}
+
+.img-personal {
+  width: 250px;
+}
+
+.personal-hover {
+  transition: 0.75s all ease-in-out;
+}
+.personal-hover:hover {
+  transform: scale(0.9);
+}
+
+.img-testimonio {
+  background-size: cover;
+  height: 420px;
+  object-fit: cover;
+}
+
+.cambio-letra {
+  color: #212529;
+  background-color: rgba(255, 255, 255, 0.82);
+  padding: 10px;
+}
+
+/* contacto */
+.fondo-contacto-img {
+  background-image: url("../img/bloques/contacto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacto-fondo {
+  background-color: rgba(0, 0, 0, 0.648);
+  padding: 58px;
+}
+
+.img-contacto {
+  width: 100%;
+}
+
+.bg-color {
+  background-color: #f3f0ef;
+}
 
 /* footer */
-
 .padding-div {
-   padding: 20px;
+  padding: 20px;
 }
 
 .nav-item {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 
 .nav-icono {
-    color: var(--color-black);
-    padding-right: 2px;
+  color: black;
+  padding-right: 2px;
 }
 
 .fondo-footer {
-    background-color: var(--color-cuaternario);
+  background-color: rgba(109, 109, 107, 0.1254901961);
 }
+
+/* media queries */
+/*vista móvil */
+@media (max-width: 600px) {
+  .ul-espacio {
+    padding-left: 100px;
+  }
+  .inicio-fondo {
+    background-color: rgba(0, 0, 0, 0.764);
+    padding: 40px;
+  }
+  .info {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: "descripcion" "botones" "ofrece" "datos" "plano-mapa";
+  }
+}
+@media (max-width: 575px) {
+  .pad-ubi {
+    padding-top: 50px;
+  }
+}
+/* vista tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+  .ul-espacio {
+    padding-left: 220px;
+  }
+  .inicio-fondo {
+    background-color: rgba(0, 0, 0, 0.764);
+    padding: 138px;
+  }
+  .info {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: "descripcion botones" "ofrece ofrece" "datos datos" "plano-mapa plano-mapa";
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .pos-logo {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 351px) and (max-width: 767px) {
+  .img-pos-inmueble {
+    text-align: center;
+  }
+}
+@media (max-width: 350px) {
+  .img-pos-inmueble {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .img-pos-inmueble {
+    display: flex;
+  }
+}
+/* vista desk */
+@media (min-width: 901px) {
+  .ul-espacio {
+    padding-left: 90px;
+  }
+  .inicio-fondo {
+    background-color: rgba(0, 0, 0, 0.764);
+    padding: 188px;
+  }
+  .info {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: "descripcion botones" "ofrece ofrece" "datos datos" "plano-mapa plano-mapa";
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

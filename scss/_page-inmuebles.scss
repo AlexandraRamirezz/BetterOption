@@ -1,0 +1,26 @@
+/* inmuebles */
+
+.inmuebles-fondo {
+	background-color: $color-bloque-trasp;
+	padding: 58px;
+}
+.fondo-inmuebles-img {
+	background-image: url("../img/bloques/inmuebles.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.ordenar-por {
+	padding: 5px;
+	background-color: $color-white;
+	border-radius: 4px;
+}
+.page-link {
+	color: $color-black;
+}
+.pagination {
+	--bs-pagination-color: #64a464;
+	--bs-pagination-hover-color: #64a464;
+	--bs-pagination-focus-color: #64a464;
+	--bs-pagination-active-bg: #64a464;
+	--bs-pagination-active-border-color: #64a464 !important;
+}

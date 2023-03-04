@@ -1,0 +1,17 @@
+/* contacto */
+
+.fondo-contacto-img {
+	background-image: url("../img/bloques/contacto.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.contacto-fondo {
+	background-color: $color-bloque-trasp;
+	padding: 58px;
+}
+.img-contacto {
+	width: 100%;
+}
+.bg-color {
+	background-color: $color-terciario;
+}

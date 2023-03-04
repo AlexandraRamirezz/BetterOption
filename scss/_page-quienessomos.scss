@@ -1,0 +1,51 @@
+/* quienes somos */
+
+.fondo-nosotros-img {
+	background-image: url("../img/bloques/nosotros.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.nosotros-fondo {
+	background-color: $color-bloque-trasp;
+	padding: 58px;
+}
+.historia {
+	border-radius: 35px;
+	width: 400px;
+}
+.separacion {
+	padding-right: 20px;
+}
+.color-preg {
+	background-color: $color-secundario;
+	color: $color-white;
+	margin: auto;
+	border-radius: 5px;
+}
+.color-resp {
+	background-color: $color-terciario;
+	border-radius: 15px;
+	transition: 0.75s all ease-in-out;
+	&:hover {
+		transform: scale(0.9);
+	}
+}
+.img-personal {
+	width: 250px;
+}
+.personal-hover {
+	transition: 0.75s all ease-in-out;
+	&:hover {
+		transform: scale(0.9);
+	}
+}
+.img-testimonio {
+	background-size: cover;
+	height: 420px;
+	object-fit: cover;
+}
+.cambio-letra {
+	color: $color-primario;
+	background-color: $color-testimonio;
+	padding: 10px;
+}

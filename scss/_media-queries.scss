@@ -1,0 +1,89 @@
+/* media queries */
+
+/*vista móvil */
+@media (max-width: 600px) {
+	.ul-espacio {
+		padding-left: 100px;
+	}
+	.inicio-fondo {
+		background-color: $color-inicio-trasp;
+		padding: 40px;
+	}
+	.info {
+		display: grid;
+		gap: 20px;
+		grid-template-areas: 
+        "descripcion" 
+        "botones" 
+        "ofrece" 
+        "datos" 
+        "plano-mapa";
+	}
+}
+@media (max-width: 575px) {
+	.pad-ubi {
+		padding-top: 50px;
+	}
+}
+
+/* vista tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+	.ul-espacio {
+		padding-left: 220px;
+	}
+	.inicio-fondo {
+		background-color: $color-inicio-trasp;
+		padding: 138px;
+	}
+	.info {
+		display: grid;
+		gap: 20px;
+		grid-template-areas: 
+        "descripcion botones" 
+        "ofrece ofrece" 
+        "datos datos" 
+        "plano-mapa plano-mapa";
+	}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+	.pos-logo {
+		padding-bottom: 20px;
+		display: flex;
+		justify-content: flex-start;
+	}
+}
+@media (min-width: 351px) and (max-width: 767px) {
+	.img-pos-inmueble {
+		text-align: center;
+	}
+}
+@media (max-width: 350px) {
+	.img-pos-inmueble {
+		display: flex;
+	}
+}
+@media (min-width: 768px) {
+	.img-pos-inmueble {
+		display: flex;
+	}
+}
+
+/* vista desk */
+@media (min-width: 901px) {
+	.ul-espacio {
+		padding-left: 90px;
+	}
+	.inicio-fondo {
+		background-color: $color-inicio-trasp;
+		padding: 188px;
+	}
+	.info {
+		display: grid;
+		gap: 20px;
+		grid-template-areas: 
+        "descripcion botones" 
+        "ofrece ofrece" 
+        "datos datos" 
+        "plano-mapa plano-mapa";
+	}
+}

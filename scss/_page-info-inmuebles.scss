@@ -1,0 +1,21 @@
+/* info - inmuebles */
+
+.imgCarousel {
+	height: 520px;
+	object-fit: cover;
+}
+.descripcion {
+	grid-area: descripcion;
+}
+.botones {
+	grid-area: botones;
+}
+.ofrece {
+	grid-area: ofrece;
+}
+.datos {
+	grid-area: datos;
+}
+.plano-mapa {
+	grid-area: plano-mapa;
+}

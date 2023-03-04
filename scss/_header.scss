@@ -1,0 +1,25 @@
+/* header */
+
+.nav-bar {
+	background-color: $color-primario;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+.h1-edicion-logo {
+	font-weight: bold;
+	font-size: 28px;
+	color: $color-white;
+	padding-left: 30px;
+}
+.nav-bar-edicion {
+	color: $color-white;
+	padding: 5px;
+	&:hover {
+		color: $color-black;
+		background-color: $color-white;
+	}
+}
+.nav-btn {
+	background-color: $color-white;
+}
