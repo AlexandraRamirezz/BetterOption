@@ -19,8 +19,8 @@
 .color-preg {
 	background-color: $color-secundario;
 	color: $color-white;
-	margin: auto;
 	border-radius: 5px;
+	margin-left: -9px;
 }
 .color-resp {
 	background-color: $color-terciario;
@@ -29,6 +29,7 @@
 	&:hover {
 		transform: scale(0.9);
 	}
+	margin-left: -21px;
 }
 .img-personal {
 	width: 250px;

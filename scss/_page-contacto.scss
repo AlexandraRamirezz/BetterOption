@@ -15,3 +15,7 @@
 .bg-color {
 	background-color: $color-terciario;
 }
+.form-check-input:checked {
+    background-color: $color-secundario;
+    border-color: $color-secundario;
+}

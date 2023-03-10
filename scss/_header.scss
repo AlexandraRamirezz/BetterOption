@@ -11,6 +11,12 @@
 	font-size: 28px;
 	color: $color-white;
 	padding-left: 30px;
+	&:hover {
+		color: $color-white;
+	}
+}
+.espacio {
+	padding-left: 110px;
 }
 .nav-bar-edicion {
 	color: $color-white;

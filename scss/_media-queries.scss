@@ -19,6 +19,10 @@
         "datos" 
         "plano-mapa";
 	}
+	.mobile-btn {
+		display: flex;
+		gap: 10px;
+	}
 }
 @media (max-width: 575px) {
 	.pad-ubi {
@@ -29,7 +33,7 @@
 /* vista tablet */
 @media (min-width: 601px) and (max-width: 900px) {
 	.ul-espacio {
-		padding-left: 220px;
+		padding-left: 50px;
 	}
 	.inicio-fondo {
 		background-color: $color-inicio-trasp;
@@ -45,16 +49,39 @@
         "plano-mapa plano-mapa";
 	}
 }
-@media (min-width: 576px) and (max-width: 767px) {
-	.pos-logo {
-		padding-bottom: 20px;
+@media (min-width: 992px) {
+	.mobile-btn {
 		display: flex;
-		justify-content: flex-start;
+		flex-direction: column;
+		gap: 30px;
+	}
+}
+@media (min-width: 600px) and (max-width: 991px) {
+	.mobile-btn {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 	}
 }
 @media (min-width: 351px) and (max-width: 767px) {
 	.img-pos-inmueble {
 		text-align: center;
+	}
+}
+@media (max-width: 575px) {
+	.grid-footer {
+		display: grid;
+		gap: 40px;
+		grid-template-areas: 
+        "logo" 
+        "navegacion" 
+        "redes";
+	}
+	.color-preg {
+		margin-left: 0px;
+	}
+	.color-resp {
+		margin-left: 0px;
 	}
 }
 @media (max-width: 350px) {
@@ -71,7 +98,7 @@
 /* vista desk */
 @media (min-width: 901px) {
 	.ul-espacio {
-		padding-left: 90px;
+		padding-left: 50px;
 	}
 	.inicio-fondo {
 		background-color: $color-inicio-trasp;
@@ -85,5 +112,12 @@
         "ofrece ofrece" 
         "datos datos" 
         "plano-mapa plano-mapa";
+	}
+}
+@media (min-width: 992px) {
+	.mobile-btn {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
 	}
 }

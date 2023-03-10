@@ -31,17 +31,17 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ul-espacio">
-                    <li class="nav-item">
-                        <a class="nav-link nav-bar-edicion" aria-current="page" href="../index.html">Inicio</a>
+                <ul class="navbar-nav espacio">
+                    <li class="nav-item ul-espacio">
+                        <a class="nav-link nav-bar-edicion" href="../index.html">Inicio</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ul-espacio">
                         <a class="nav-link nav-bar-edicion" href="inmuebles.html">Inmuebles</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ul-espacio">
                         <a class="nav-link nav-bar-edicion" href="quienessomos.html">Quiénes somos</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ul-espacio">
                         <a class="nav-link nav-bar-edicion" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
@@ -60,6 +60,7 @@
 
 
 
+    <!-- carousel de img del primer inmueble -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -100,7 +101,7 @@
                 terraza en la azotea, un gimnasio y una piscina climatizada.
             </p>
         </div>
-        <div class="botones">
+        <div class="botones mobile-btn">
             <div>
                 <button class="btn btn-primary btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Contactar
                     al proveedor</button>
@@ -137,8 +138,8 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="checkbox" id="invalidCheck"
-                                                required />
+                                            <input class="form-check-input" type="checkbox" value="checkbox"
+                                                id="invalidCheck" required />
                                             <label class="form-check-label" for="invalidCheck">Acepto
                                                 todos los términos y
                                                 condiciones
@@ -159,7 +160,6 @@
                 </div>
 
             </div>
-            <br>
             <div>
                 <button type="button" class="btn btn-secondary" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Programar una visita</button>
@@ -167,25 +167,35 @@
                     aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-header p-4">
                         <h4 class="offcanvas-title bg-color rounded text-secondary p-3" id="offcanvasExampleLabel">
-                            Programar una
-                            visita</h4>
+                            Programar una visita</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body p-4">
-                        <h6>Inmueble:</h6>
-                        <p>Departamento amoblado en Miraflores | $900 mensuales</p><br>
-                        <h6>Proveedor:</h6>
-                        <p>Hotel Britania Miraflores</p><br>
-                        <h6>Horario:</h6>
-                        <select name="select">
-                            <option value="value1" selected>08:00am - 10:00am</option>
-                            <option value="value2">03:00pm - 05:00pm</option>
-                            <option value="value3">07:00pm - 09:00pm</option>
-                        </select><br><br><br>
-                        <h6>Vacantes:</h6>
-                        <p>2</p><br>
-                        <h6>Agente inmobiliario:</h6>
-                        <p>Alejandro Guzmán</p><br>
+                    <div class="offcanvas-body p-4 d-flex flex-column gap-4">
+                        <div>
+                            <h6>Inmueble:</h6>
+                            <p>Departamento amoblado en Miraflores | $900 mensuales</p>
+                        </div>
+                        <div>
+                            <h6>Proveedor:</h6>
+                            <p>Hotel Britania Miraflores</p>
+                        </div>
+                        <div>
+                            <h6>Horario:</h6>
+                            <select name="select">
+                                <option value="value1" selected>08:00am - 10:00am</option>
+                                <option value="value2">03:00pm - 05:00pm</option>
+                                <option value="value3">07:00pm - 09:00pm</option>
+                            </select>
+                        </div>
+                        <div>
+                            <br>
+                            <h6>Vacantes:</h6>
+                            <p>2</p>
+                        </div>
+                        <div>
+                            <h6>Agente inmobiliario:</h6>
+                            <p>Alejandro Guzmán</p>
+                        </div>
                         <div class="text-end">
                             <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                             <button class="btn btn-success" type="submit">Programar visita</button>
@@ -194,7 +204,6 @@
 
                 </div>
             </div>
-            <br>
             <div>
                 <button class="btn btn-primary btn-light bg-color">Marcar como favorito</button>
             </div>
@@ -226,23 +235,27 @@
             <div class="bg-color p-3 rounded">
                 <h6>Gimnasio</h6>
                 <p>Puede ser muy conveniente para los residentes que quieren mantenerse en forma sin tener que salir de
-                casa. Ofrecen un equipo de entrenamiento, como pesas, máquinas de cardio y otros accesorios de fitness.</p>
+                    casa. Ofrecen un equipo de entrenamiento, como pesas, máquinas de cardio y otros accesorios de
+                    fitness.</p>
             </div>
             <br>
             <div class="bg-color p-3 rounded">
                 <h6>Áreas verdes</h6>
-                <p>Lugar tranquilo para relajarse, disfrutar del aire libre y conectarse con la naturaleza. Incluye jardines
-                y parques en donde los residentes puedan caminar, sentarse y disfrutar del paisaje.</p>
+                <p>Lugar tranquilo para relajarse, disfrutar del aire libre y conectarse con la naturaleza. Incluye
+                    jardines
+                    y parques en donde los residentes puedan caminar, sentarse y disfrutar del paisaje.</p>
             </div>
             <br>
             <div class="bg-color p-3 rounded">
                 <h6>Área de lavandería</h6>
-                <p>Disponen de lavadoras y secadoras en una sala común que pueden ser usadas por todos los residentes.</p>
-            </div> 
+                <p>Disponen de lavadoras y secadoras en una sala común que pueden ser usadas por todos los residentes.
+                </p>
+            </div>
             <br>
             <div class="bg-color p-3 rounded">
                 <h6>Parrilla</h6>
-                <p>Puede ser una gran adición para aquellos que disfrutan de cocinar y tener reuniones al aire libre. Estas
+                <p>Puede ser una gran adición para aquellos que disfrutan de cocinar y tener reuniones al aire libre.
+                    Estas
                     parrillas pueden ser usadas por los residentes para hacer barbacoas o parrilladas con amigos y
                     familiares.</p>
             </div>
@@ -289,7 +302,8 @@
             class="plano-mapa row row-cols-1 row-cols-sm-2 row-cols-md-2 py-4 my-1 d-flex justify-content-center border-top">
             <div class="col px-5">
                 <h5>Planos:</h5>
-                <img style="width: 100%; height: 100%;" class="img-fluid" src="../img/info-inmuebles/inmueble1/plano.jpg" alt="planos-inmueble1">
+                <img style="width: 100%; height: 100%;" class="img-fluid"
+                    src="../img/info-inmuebles/inmueble1/plano.jpg" alt="planos-inmueble1">
             </div>
             <div class="col px-5 pad-ubi">
                 <h5>Ubicación:</h5>
@@ -299,26 +313,22 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-
     </div>
-
-
 
 
 
     <!-- footer -->
     <footer class="container fondo-footer">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-4 my-4 border-top">
-            <div class="text-center pos-logo">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 py-4 my-4 border-top grid-footer">
+            <div class="col mb-3 text-center logo">
                 <div>
                     <a href="../index.html">
-                    <img src=" ../img/logo.png" alt="logo">
+                        <img src="../img/logo.png" alt="logo">
                     </a>
                     <h4><span>B</span>etter<span>O</span>ption</a></h4>
                 </div>
             </div>
-            <div class="col mb-3"></div>
-            <div class="col mb-3">
+            <div class="col mb-3 text-center navegacion">
                 <h5>Navegación</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
@@ -335,7 +345,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col mb-3">
+            <div class="col mb-3 text-center redes">
                 <h5>Redes</h5>
                 <ul>
                     <a target="_blank" href="https://www.whatsapp.com/"><i

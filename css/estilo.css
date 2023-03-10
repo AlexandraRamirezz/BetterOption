@@ -29,6 +29,13 @@ span {
   color: white;
   padding-left: 30px;
 }
+.h1-edicion-logo:hover {
+  color: white;
+}
+
+.espacio {
+  padding-left: 110px;
+}
 
 .nav-bar-edicion {
   color: white;
@@ -70,7 +77,6 @@ span {
 
 .ordenar-por {
   padding: 5px;
-  background-color: white;
   border-radius: 4px;
 }
 
@@ -136,14 +142,15 @@ span {
 .color-preg {
   background-color: #64a464;
   color: white;
-  margin: auto;
   border-radius: 5px;
+  margin-left: -9px;
 }
 
 .color-resp {
   background-color: #f3f0ef;
   border-radius: 15px;
   transition: 0.75s all ease-in-out;
+  margin-left: -21px;
 }
 .color-resp:hover {
   transform: scale(0.9);
@@ -192,15 +199,12 @@ span {
   background-color: #f3f0ef;
 }
 
+.form-check-input:checked {
+  background-color: #64a464;
+  border-color: #64a464;
+}
+
 /* footer */
-.padding-div {
-  padding: 20px;
-}
-
-.nav-item {
-  padding-left: 30px;
-}
-
 .nav-icono {
   color: black;
   padding-right: 2px;
@@ -208,6 +212,18 @@ span {
 
 .fondo-footer {
   background-color: rgba(109, 109, 107, 0.1254901961);
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.navegacion {
+  grid-area: navegacion;
+}
+
+.redes {
+  grid-area: redes;
 }
 
 /* media queries */
@@ -225,6 +241,10 @@ span {
     gap: 20px;
     grid-template-areas: "descripcion" "botones" "ofrece" "datos" "plano-mapa";
   }
+  .mobile-btn {
+    display: flex;
+    gap: 10px;
+  }
 }
 @media (max-width: 575px) {
   .pad-ubi {
@@ -234,7 +254,7 @@ span {
 /* vista tablet */
 @media (min-width: 601px) and (max-width: 900px) {
   .ul-espacio {
-    padding-left: 220px;
+    padding-left: 50px;
   }
   .inicio-fondo {
     background-color: rgba(0, 0, 0, 0.764);
@@ -246,16 +266,36 @@ span {
     grid-template-areas: "descripcion botones" "ofrece ofrece" "datos datos" "plano-mapa plano-mapa";
   }
 }
-@media (min-width: 576px) and (max-width: 767px) {
-  .pos-logo {
-    padding-bottom: 20px;
+@media (min-width: 992px) {
+  .mobile-btn {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media (min-width: 600px) and (max-width: 991px) {
+  .mobile-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
 @media (min-width: 351px) and (max-width: 767px) {
   .img-pos-inmueble {
     text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .grid-footer {
+    display: grid;
+    gap: 40px;
+    grid-template-areas: "logo" "navegacion" "redes";
+  }
+  .color-preg {
+    margin-left: 0px;
+  }
+  .color-resp {
+    margin-left: 0px;
   }
 }
 @media (max-width: 350px) {
@@ -271,7 +311,7 @@ span {
 /* vista desk */
 @media (min-width: 901px) {
   .ul-espacio {
-    padding-left: 90px;
+    padding-left: 50px;
   }
   .inicio-fondo {
     background-color: rgba(0, 0, 0, 0.764);
@@ -281,6 +321,13 @@ span {
     display: grid;
     gap: 20px;
     grid-template-areas: "descripcion botones" "ofrece ofrece" "datos datos" "plano-mapa plano-mapa";
+  }
+}
+@media (min-width: 992px) {
+  .mobile-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
 }
 
