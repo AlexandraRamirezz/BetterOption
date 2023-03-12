@@ -1,5 +1,10 @@
 /* footer */
 
+@mixin small-f {
+	color: $color-inicio-trasp;
+	font-weight: 100;
+	font-size: 18px;
+}
 .nav-icono {
 	color: $color-black;
 	padding-right: 2px;
@@ -9,10 +14,25 @@
 }
 .logo {
 	grid-area: logo;
+
+	small {
+		@include small-f;
+		font-weight: bold;
+	}
 }
 .navegacion {
 	grid-area: navegacion;
+
+	small {
+		@include small-f;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
 }
 .redes {
 	grid-area: redes;
+
+	small {
+		@include small-f;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
 }

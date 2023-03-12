@@ -1,6 +1,12 @@
 /* general */
 
-.cambio-color {
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+@mixin subtítulos {
+	font-size: 20px;
 	color: $color-secundario;
 }
 .padding-section {
@@ -8,7 +14,16 @@
 	border: solid 2px $color-cuaternario;
 	margin-top: 30px;
 	border-radius: 5px;
+	h2 {
+		@include subtítulos;
+	}
+	h3 {
+		font-size: 20px;
+	}
 }
 span {
 	color: $color-secundario;
+}
+.fondito-div {
+	background-image: radial-gradient($color-cuaternario, $color-white);
 }

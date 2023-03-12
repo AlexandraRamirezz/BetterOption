@@ -5,9 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BetterOption | Quiénes somos</title>
+    <meta name="description" content="Departamento recién construido en el centro de la ciudad: Este inmueble cuenta con un diseño de plan de planta abierto con techos altos y ventanas de piso a techo que brindan mucha luz natural y vistas impresionantes de la ciudad.">
+    <meta name="keywords" content="inmuebles, propiedades, departamentos">
+    <title>BetterOption | Departamento amoblado en Miraflores | $900 mensuales</title>
 
     <link href="../img/favicon.png" rel="icon">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,9 +30,8 @@
     <!-- Barra navegadora -->
     <nav class="navbar navbar-expand-lg nav-bar">
         <div class="container-fluid">
-            <h1><a class="navbar-brand nav-bar h1-edicion-logo"
-                    href="../index.html"><span>B</span>etter<span>O</span>ption</a>
-            </h1>
+            <a class="navbar-brand nav-bar edicion-logo animate__animated animate__lightSpeedInLeft"
+                href="../index.html"><span>B</span>etter<span>O</span>ption</a>
             <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -91,8 +98,8 @@
     </div>
 
     <div class="container padding-section info">
-        <div class="descripcion">
-            <h3>Departamento amoblado en Miraflores | $900 mensuales</h3>
+        <div class="descripcion fondito-div">
+            <h1>Departamento amoblado en Miraflores | $900 mensuales</h1>
             <p>Departamento recién construido en el centro de la ciudad: Este inmueble cuenta con un diseño de plan de
                 planta abierto con techos altos y ventanas de piso a techo que brindan mucha luz natural y vistas
                 impresionantes de la ciudad. La cocina está equipada con electrodomésticos de acero inoxidable y una
@@ -103,17 +110,17 @@
         </div>
         <div class="botones mobile-btn">
             <div>
-                <button class="btn btn-primary btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Contactar
+                <button class="btn btn-primary btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal1">Contactar
                     al proveedor</button>
 
                 <!-- Enviar solicitud -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h2 class="modal-title fs-5" id="exampleModalLabel">Enviar solicitud
-                                    al proveedor</h2>
+                                <strong class="modal-title fs-5" id="exampleModalLabel1">Enviar solicitud
+                                    al proveedor</strong>
                                 <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body bg-color p-4">
@@ -166,21 +173,21 @@
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
                     aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-header p-4">
-                        <h4 class="offcanvas-title bg-color rounded text-secondary p-3" id="offcanvasExampleLabel">
-                            Programar una visita</h4>
+                        <strong class="offcanvas-title bg-color rounded text-secondary p-3" id="offcanvasExampleLabel">
+                            Programar una visita</strong>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body p-4 d-flex flex-column gap-4">
                         <div>
-                            <h6>Inmueble:</h6>
+                            <strong>Inmueble:</strong>
                             <p>Departamento amoblado en Miraflores | $900 mensuales</p>
                         </div>
                         <div>
-                            <h6>Proveedor:</h6>
+                            <strong>Proveedor:</strong>
                             <p>Hotel Britania Miraflores</p>
                         </div>
                         <div>
-                            <h6>Horario:</h6>
+                            <strong class="d-flex justify-content-start">Horario:</strong>
                             <select name="select">
                                 <option value="value1" selected>08:00am - 10:00am</option>
                                 <option value="value2">03:00pm - 05:00pm</option>
@@ -189,11 +196,11 @@
                         </div>
                         <div>
                             <br>
-                            <h6>Vacantes:</h6>
+                            <strong>Vacantes:</strong>
                             <p>2</p>
                         </div>
                         <div>
-                            <h6>Agente inmobiliario:</h6>
+                            <strong>Agente inmobiliario:</strong>
                             <p>Alejandro Guzmán</p>
                         </div>
                         <div class="text-end">
@@ -208,89 +215,88 @@
                 <button class="btn btn-primary btn-light bg-color">Marcar como favorito</button>
             </div>
         </div>
-        <div class="ofrece px-5 border-top py-4">
-            <h5>¿Qué ofrece este proyecto?</h5>
+        <div class="ofrece px-3 border-top py-4">
+            <h2>¿Qué ofrece este proyecto?</h2>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-5 py-2 d-flex justify-content-center">
-                <div class="col mb-3 text-center rounded border border-secondary p-2">
-                    <h6>Gimnasio</h6>
+                <div class="col mb-3 text-center rounded border border-secondary p-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+                    <strong>Gimnasio</strong>
                     <p>09:00am - 09:00pm</p>
                     <i class="fa-solid fa-dumbbell fa-3x"></i>
                 </div>
-                <div class="col mb-3 text-center rounded border border-secondary p-2">
-                    <h6>Áreas verdes</h6>
+                <div class="col mb-3 text-center rounded border border-secondary p-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+                    <strong >Áreas verdes</strong>
                     <p>06:00am - 12:00pm</p>
                     <i class="fa-solid fa-leaf fa-3x"></i>
                 </div>
-                <div class="col mb-3 text-center rounded border border-secondary p-2">
-                    <h6>Área de lavandería</h6>
+                <div class="col mb-3 text-center rounded border border-secondary p-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+                    <strong>Área de lavandería</strong>
                     <p>06:00am - 11:00pm</p>
                     <i class="fa-solid fa-jug-detergent fa-3x"></i>
                 </div>
-                <div class="col mb-3 text-center rounded border border-secondary p-2">
-                    <h6>Parrilla</h6>
+                <div class="col mb-3 text-center rounded border border-secondary p-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+                    <strong>Parrilla</strong>
                     <p>08:00am - 07:00pm</p>
                     <i class="fa-solid fa-fire fa-3x"></i>
                 </div>
             </div>
-            <div class="bg-color p-3 rounded">
-                <h6>Gimnasio</h6>
-                <p>Puede ser muy conveniente para los residentes que quieren mantenerse en forma sin tener que salir de
-                    casa. Ofrecen un equipo de entrenamiento, como pesas, máquinas de cardio y otros accesorios de
-                    fitness.</p>
-            </div>
-            <br>
-            <div class="bg-color p-3 rounded">
-                <h6>Áreas verdes</h6>
-                <p>Lugar tranquilo para relajarse, disfrutar del aire libre y conectarse con la naturaleza. Incluye
-                    jardines
-                    y parques en donde los residentes puedan caminar, sentarse y disfrutar del paisaje.</p>
-            </div>
-            <br>
-            <div class="bg-color p-3 rounded">
-                <h6>Área de lavandería</h6>
-                <p>Disponen de lavadoras y secadoras en una sala común que pueden ser usadas por todos los residentes.
-                </p>
-            </div>
-            <br>
-            <div class="bg-color p-3 rounded">
-                <h6>Parrilla</h6>
-                <p>Puede ser una gran adición para aquellos que disfrutan de cocinar y tener reuniones al aire libre.
-                    Estas
-                    parrillas pueden ser usadas por los residentes para hacer barbacoas o parrilladas con amigos y
-                    familiares.</p>
+            <div class="d-flex flex-column gap-3">
+                <div class="bg-color p-3 rounded div-hover">
+                    <strong>Gimnasio</strong>
+                    <p>Puede ser muy conveniente para los residentes que quieren mantenerse en forma sin tener que salir de
+                        casa. Ofrecen un equipo de entrenamiento, como pesas, máquinas de cardio y otros accesorios de
+                        fitness.</p>
+                </div>
+                <div class="bg-color p-3 rounded div-hover">
+                    <strong>Áreas verdes</strong>
+                    <p>Lugar tranquilo para relajarse, disfrutar del aire libre y conectarse con la naturaleza. Incluye
+                        jardines
+                        y parques en donde los residentes puedan caminar, sentarse y disfrutar del paisaje.</p>
+                </div>
+                <div class="bg-color p-3 rounded div-hover">
+                    <strong>Área de lavandería</strong>
+                    <p>Disponen de lavadoras y secadoras en una sala común que pueden ser usadas por todos los residentes.
+                    </p>
+                </div>
+                <div class="bg-color p-3 rounded div-hover">
+                    <strong>Parrilla</strong>
+                    <p>Puede ser una gran adición para aquellos que disfrutan de cocinar y tener reuniones al aire libre.
+                        Estas
+                        parrillas pueden ser usadas por los residentes para hacer barbacoas o parrilladas con amigos y
+                        familiares.</p>
+                </div>
             </div>
         </div>
         <div class="datos">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 d-flex justify-content-center py-4 border-top">
-                <div class="col px-5">
-                    <h5>Datos:</h5>
+                <div class="col px-4">
+                    <h2>Datos:</h2>
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 py-2 d-flex justify-content-center">
-                        <div class="col mb-3 text-center rounded border border-secondary p-2">
+                        <div class="col mb-3 text-center rounded border border-secondary p-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                             <i class="fa-solid fa-bed fa-2x"></i>
                             <p>3 dormitorios</p>
                         </div>
-                        <div class="col mb-3 text-center rounded border border-secondary p-2">
+                        <div class="col mb-3 text-center rounded border border-secondary p-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                             <i class="fa-solid fa-toilet fa-2x"></i>
                             <p>4 baños</p>
                         </div>
-                        <div class="col mb-3 text-center rounded border border-secondary p-2">
+                        <div class="col mb-3 text-center rounded border border-secondary p-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                             <i class="fa-solid fa-ruler-vertical fa-2x"></i>
                             <p>90 m²</p>
                         </div>
                     </div>
                 </div>
-                <div class="col px-5">
-                    <h5>Servicios:</h5>
+                <div class="col px-4">
+                    <h2>Servicios:</h2>
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 py-2 d-flex justify-content-center">
-                        <div class="col mb-3 text-center rounded border border-secondary p-2">
+                        <div class="col mb-3 text-center rounded border border-secondary p-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                             <i class="fa-solid fa-shield-dog fa-2x"></i>
                             <p>Pet-friendly</p>
                         </div>
-                        <div class="col mb-3 text-center rounded border border-secondary p-2">
+                        <div class="col mb-3 text-center rounded border border-secondary p-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                             <i class="fa-solid fa-water fa-2x"></i>
                             <p>Agua corriente</p>
                         </div>
-                        <div class="col mb-3 text-center rounded border border-secondary p-2">
+                        <div class="col mb-3 text-center rounded border border-secondary p-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                             <i class="fa-solid fa-wifi fa-2x"></i>
                             <p>Internet</p>
                         </div>
@@ -300,13 +306,13 @@
         </div>
         <div
             class="plano-mapa row row-cols-1 row-cols-sm-2 row-cols-md-2 py-4 my-1 d-flex justify-content-center border-top">
-            <div class="col px-5">
-                <h5>Planos:</h5>
+            <div class="col px-4">
+                <h2>Planos:</h2>
                 <img style="width: 100%; height: 100%;" class="img-fluid"
                     src="../img/info-inmuebles/inmueble1/plano.jpg" alt="planos-inmueble1">
             </div>
-            <div class="col px-5 pad-ubi">
-                <h5>Ubicación:</h5>
+            <div class="col px-4 pad-ubi">
+                <h2>Ubicación:</h2>
                 <iframe style="width: 100%; height: 100%;"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d289.93734080378306!2d-77.03267832076001!3d-12.11787730344424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c817c32b7a5b%3A0xba03c2680dc33a9e!2sHotel%20Britania%20Miraflores!5e0!3m2!1ses-419!2spe!4v1677307311275!5m2!1ses-419!2spe"
                     style="border:0;" allowfullscreen="ubicacion" loading="lazy"
@@ -325,11 +331,11 @@
                     <a href="../index.html">
                         <img src="../img/logo.png" alt="logo">
                     </a>
-                    <h4><span>B</span>etter<span>O</span>ption</a></h4>
+                    <small class="d-flex justify-content-center"><span>B</span>etter<span>O</span>ption</small>
                 </div>
             </div>
             <div class="col mb-3 text-center navegacion">
-                <h5>Navegación</h5>
+                <small>Navegación</small>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
                         <a href="../index.html" class="nav-link p-0 text-muted">Inicio</a>
@@ -346,7 +352,7 @@
                 </ul>
             </div>
             <div class="col mb-3 text-center redes">
-                <h5>Redes</h5>
+                <small>Redes</small>
                 <ul>
                     <a target="_blank" href="https://www.whatsapp.com/"><i
                             class="fa-brands fa-whatsapp fa-2x nav-icono"></i></a>
@@ -363,6 +369,11 @@
         <p class="text-muted text-center">Desarrollado por<span>: Alexandra Ramirez.</span></p>
 
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

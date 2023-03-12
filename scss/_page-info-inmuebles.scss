@@ -1,21 +1,51 @@
 /* info - inmuebles */
 
+@mixin h2-inf {
+	color: $color-primario;
+}
+.offcanvas-header {
+	strong {
+		font-size: 22px;
+	}
+}
 .imgCarousel {
-	height: 520px;
+	height: 400px;
 	object-fit: cover;
 }
 .descripcion {
 	grid-area: descripcion;
+
+	h1 {
+		font-size: 24px;
+	}
 }
 .botones {
 	grid-area: botones;
 }
 .ofrece {
 	grid-area: ofrece;
+
+	h2 {
+		@include h2-inf;
+	}
+}
+.div-hover {
+	transition: 0.75s all ease-in-out;
+	&:hover {
+		transform: scale(0.9);
+	}
 }
 .datos {
 	grid-area: datos;
+
+	h2 {
+		@include h2-inf;
+	}
 }
 .plano-mapa {
 	grid-area: plano-mapa;
+
+	h2 {
+		@include h2-inf;
+	}
 }

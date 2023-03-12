@@ -21,6 +21,10 @@
 	color: $color-white;
 	border-radius: 5px;
 	margin-left: -9px;
+
+	h2 {
+		font-size: 20px;
+	}
 }
 .color-resp {
 	background-color: $color-terciario;
@@ -29,10 +33,12 @@
 	&:hover {
 		transform: scale(0.9);
 	}
-	margin-left: -21px;
+	margin-left: -5px;
+	display: inline-block;
 }
 .img-personal {
 	width: 250px;
+	border: 1px solid $color-cuaternario;
 }
 .personal-hover {
 	transition: 0.75s all ease-in-out;

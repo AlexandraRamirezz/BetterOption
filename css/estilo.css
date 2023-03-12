@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /* general */
-.cambio-color {
-  color: #64a464;
+h1 {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .padding-section {
@@ -10,9 +11,20 @@
   margin-top: 30px;
   border-radius: 5px;
 }
+.padding-section h2 {
+  font-size: 20px;
+  color: #64a464;
+}
+.padding-section h3 {
+  font-size: 20px;
+}
 
 span {
   color: #64a464;
+}
+
+.fondito-div {
+  background-image: radial-gradient(rgba(109, 109, 107, 0.1254901961), white);
 }
 
 /* header */
@@ -23,13 +35,13 @@ span {
   z-index: 10;
 }
 
-.h1-edicion-logo {
+.edicion-logo {
   font-weight: bold;
   font-size: 28px;
   color: white;
   padding-left: 30px;
 }
-.h1-edicion-logo:hover {
+.edicion-logo:hover {
   color: white;
 }
 
@@ -55,6 +67,9 @@ span {
   background-image: url("../img/inicio.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.fondo-inicio-img strong {
+  font-size: 20px;
 }
 
 .div-inmueble-reciente {
@@ -93,13 +108,20 @@ span {
 }
 
 /* info - inmuebles */
+.offcanvas-header strong {
+  font-size: 22px;
+}
+
 .imgCarousel {
-  height: 520px;
+  height: 400px;
   object-fit: cover;
 }
 
 .descripcion {
   grid-area: descripcion;
+}
+.descripcion h1 {
+  font-size: 24px;
 }
 
 .botones {
@@ -109,13 +131,29 @@ span {
 .ofrece {
   grid-area: ofrece;
 }
+.ofrece h2 {
+  color: #212529;
+}
+
+.div-hover {
+  transition: 0.75s all ease-in-out;
+}
+.div-hover:hover {
+  transform: scale(0.9);
+}
 
 .datos {
   grid-area: datos;
 }
+.datos h2 {
+  color: #212529;
+}
 
 .plano-mapa {
   grid-area: plano-mapa;
+}
+.plano-mapa h2 {
+  color: #212529;
 }
 
 /* quienes somos */
@@ -145,12 +183,16 @@ span {
   border-radius: 5px;
   margin-left: -9px;
 }
+.color-preg h2 {
+  font-size: 20px;
+}
 
 .color-resp {
   background-color: #f3f0ef;
   border-radius: 15px;
   transition: 0.75s all ease-in-out;
-  margin-left: -21px;
+  margin-left: -5px;
+  display: inline-block;
 }
 .color-resp:hover {
   transform: scale(0.9);
@@ -158,6 +200,7 @@ span {
 
 .img-personal {
   width: 250px;
+  border: 1px solid rgba(109, 109, 107, 0.1254901961);
 }
 
 .personal-hover {
@@ -199,6 +242,10 @@ span {
   background-color: #f3f0ef;
 }
 
+.fondo-form {
+  background-color: rgb(223, 220, 220);
+}
+
 .form-check-input:checked {
   background-color: #64a464;
   border-color: #64a464;
@@ -217,13 +264,31 @@ span {
 .logo {
   grid-area: logo;
 }
+.logo small {
+  color: rgba(0, 0, 0, 0.764);
+  font-weight: 100;
+  font-size: 18px;
+  font-weight: bold;
+}
 
 .navegacion {
   grid-area: navegacion;
 }
+.navegacion small {
+  color: rgba(0, 0, 0, 0.764);
+  font-weight: 100;
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 .redes {
   grid-area: redes;
+}
+.redes small {
+  color: rgba(0, 0, 0, 0.764);
+  font-weight: 100;
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* media queries */

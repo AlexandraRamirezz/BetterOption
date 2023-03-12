@@ -4,6 +4,10 @@
 	background-image: url("../img/inicio.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	strong {
+		font-size: 20px;
+	}
 }
 .div-inmueble-reciente {
 	display: flex;

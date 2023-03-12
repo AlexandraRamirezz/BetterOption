@@ -5,9 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somos una herramienta valiosa para aquellos que buscan comprar o alquilar una propiedad inmobiliaria, ya que proporcionamos información detallada y actualizada sobre las propiedades disponibles.">
+    <meta name="keywords" content="inmuebles, propiedades, departamentos, casas, terrenos, historia, servicios, personal">
     <title>BetterOption | Quiénes somos</title>
 
     <link href="../img/favicon.png" rel="icon">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,9 +30,8 @@
     <!-- Barra navegadora -->
     <nav class="navbar navbar-expand-lg nav-bar">
         <div class="container-fluid">
-            <h1><a class="navbar-brand nav-bar h1-edicion-logo"
-                    href="../index.html"><span>B</span>etter<span>O</span>ption</a>
-            </h1>
+            <a class="navbar-brand nav-bar edicion-logo animate__animated animate__lightSpeedInLeft"
+                href="../index.html"><span>B</span>etter<span>O</span>ption</a>
             <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -64,8 +71,8 @@
     <div class="p-6 text-center bg-image fondo-nosotros-img">
         <div class="mask nosotros-fondo img-fluid">
             <div class="d-flex justify-content-center align-items-center h-100">
-                <div class="text-white">
-                    <h2 class="mb-3">Acerca de nosotros</h2>
+                <div class="text-white" data-aos="fade-up" data-aos-duration="2000">
+                    <h1 class="mb-3">Acerca de nosotros</h1>
                     <p>Somos una herramienta valiosa para aquellos que buscan
                         comprar o alquilar una propiedad inmobiliaria, ya que proporcionamos información detallada y
                         actualizada sobre las propiedades disponibles. Nuestro servicio es excepcional porque contamos
@@ -79,13 +86,11 @@
 
 
     <!-- historia -->
-    <div class="container padding-section">
-        <h5 class="text-center cambio-color">NUESTRA HISTORIA</h5>
-        <div
-            class="row row-cols-1 row-cols-sm-2 row-cols-md-2 py-2 my-2 d-flex justify-content-around align-items-center">
+    <div class="container padding-section fondito-div">
+        <h2 class="text-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">NUESTRA HISTORIA</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 py-2 my-2 d-flex justify-content-around align-items-center">
             <img class="historia" src="../img/historia.jpeg" alt="historia">
             <div>
-                <br>
                 <p class="fst-italic">"En la década de 2000, las
                     páginas
                     de inmuebles se volvieron cada vez más populares y nosotros no podíamos desperdiciar la oportunidad.
@@ -106,24 +111,24 @@
 
     <!-- servicio -->
     <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-4 my-4d-grid gap-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-4 my-4 gap-2">
             <div class="col mb-3 color-preg p-3">
-                <h4 class="text-center fst-italic">¿POR QUÉ ELEGIR BetterOption?</h4>
-                <p class="text-center">Contamos con los siguientes beneficios que contará si decide utilizar nuestra
+                <h2 class="text-center fst-italic" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">¿POR QUÉ ELEGIR BetterOption?</h2>
+                <p class="text-center">Contamos con los siguientes beneficios que tendrá si decide utilizar nuestra
                     página web. Es importante para nosotros garantizar un servicio de calidad.</p>
             </div>
             <div class="col mb-3 color-resp text-center p-4">
-                <h6>Contacto directo con el proveedor</h6>
+                <strong>Contacto directo con el proveedor</strong>
                 <p>Podrás obtener más información, hacer preguntas sobre los detalles de la transacción o solicitar una
                     visita a la propiedad.</p>
             </div>
             <div class="col mb-3 color-resp text-center p-4">
-                <h6>Equipo de profesionales a cargo del desarrollo</h6>
+                <strong>Equipo de profesionales a cargo del desarrollo</strong>
                 <p>Grupo de personas especializadas en diferentes áreas que trabajan juntas para que tu experiencia sea
                     la mejor en la página.</p>
             </div>
             <div class="col mb-3 color-resp text-center p-4">
-                <h6>Disponibilidad las 24 horas</h6>
+                <strong>Disponibilidad las 24 horas</strong>
                 <p>Proporcionaremos soporte técnico y resolveremos problemas en cualquier momento las 24 horas.
                     Garantizamos una respuesta rápida e inmediata.</p>
             </div>
@@ -133,17 +138,19 @@
 
 
     <!-- personal -->
-    <div class="container padding-section">
-        <h5 class="text-center cambio-color">NUESTRO PERSONAL</h5>
+    <div class="container padding-section fondito-div">
+        <h2 class="text-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">NUESTRO PERSONAL</h2>
         <br>
         <div class="card-group">
             <div class="card personal-hover">
                 <div class="text-center">
-                    <img src="../img/personal/personal-1.jpg" class="card-img-top img-personal rounded-circle" alt="personal-1">
+                    <img src="../img/personal/personal-1.jpg" class="card-img-top img-personal rounded-circle"
+                        alt="personal-1">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title text-center">Jovani Vazquez</h5>
-                    <p class="card-text">Persona encargada de programar y diseñar la página web inmobiliaria, asegurándose de que sea fácil de usar y esté actualizada.</p>
+                    <h3 class="card-title text-center">Jovani Vazquez</h3>
+                    <p class="card-text">Persona encargada de programar y diseñar la página web inmobiliaria,
+                        asegurándose de que sea fácil de usar y esté actualizada.</p>
                 </div>
                 <div class="card-footer text-center">
                     <small class="text-muted">Desarrollador web</small>
@@ -151,11 +158,13 @@
             </div>
             <div class="card personal-hover">
                 <div class="text-center">
-                    <img src="../img/personal/personal-2.jpg" class="card-img-top img-personal rounded-circle" alt="personal-2">
+                    <img src="../img/personal/personal-2.jpg" class="card-img-top img-personal rounded-circle"
+                        alt="personal-2">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title text-center">Armando Paredes</h5>
-                    <p class="card-text">Encargado de crear la imagen visual de BetterOption, incluyendo el diseño de la interfaz, logotipos y otros elementos gráficos.
+                    <h3 class="card-title text-center">Armando Paredes</h3>
+                    <p class="card-text">Encargado de crear la imagen visual de BetterOption, incluyendo el diseño de la
+                        interfaz, logotipos y otros elementos gráficos.
                     </p>
                 </div>
                 <div class="card-footer text-center">
@@ -164,11 +173,13 @@
             </div>
             <div class="card personal-hover">
                 <div class="text-center">
-                    <img src="../img/personal/personal-3.jpg" class="card-img-top img-personal rounded-circle" alt="personal-3">
+                    <img src="../img/personal/personal-3.jpg" class="card-img-top img-personal rounded-circle"
+                        alt="personal-3">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title text-center">Pamela Ramirez</h5>
-                    <p class="card-text">Encargada de promocionarnos. Sus funciones pueden incluir la publicidad en línea, la gestión de redes sociales, entre otros.</p>
+                    <h3 class="card-title text-center">Pamela Ramirez</h3>
+                    <p class="card-text">Encargada de promocionarnos. Sus funciones pueden incluir la publicidad en
+                        línea, la gestión de redes sociales, entre otros.</p>
                 </div>
                 <div class="card-footer text-center">
                     <small class="text-muted">Especialista en marketing digital</small>
@@ -178,11 +189,13 @@
         <div class="card-group">
             <div class="card personal-hover">
                 <div class="text-center">
-                    <img src="../img/personal/personal-4.jpg" class="card-img-top img-personal rounded-circle" alt="personal-4">
+                    <img src="../img/personal/personal-4.jpg" class="card-img-top img-personal rounded-circle"
+                        alt="personal-4">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title text-center">Anna Fernandez</h5>
-                    <p class="card-text">Encargada de crear y gestionar el contenido, incluyendo descripciones de propiedades y otro material relacionado con bienes raíces.</p>
+                    <h3 class="card-title text-center">Anna Fernandez</h3>
+                    <p class="card-text">Encargada de crear y gestionar el contenido, incluyendo descripciones de
+                        propiedades y otro material relacionado con bienes raíces.</p>
                 </div>
                 <div class="card-footer text-center">
                     <small class="text-muted">Especialista en contenido</small>
@@ -190,11 +203,13 @@
             </div>
             <div class="card personal-hover">
                 <div class="text-center">
-                    <img src="../img/personal/personal-5.jpg" class="card-img-top img-personal rounded-circle" alt="personal-5">
+                    <img src="../img/personal/personal-5.jpg" class="card-img-top img-personal rounded-circle"
+                        alt="personal-5">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title text-center">William Anderson</h5>
-                    <p class="card-text">Encargado de administrar y mantener la base de datos de la página, asegurándose de que la información sea precisa y esté actualizada.
+                    <h3 class="card-title text-center">William Anderson</h3>
+                    <p class="card-text">Encargado de administrar y mantener la base de datos de la página, asegurándose
+                        de que la información sea precisa y esté actualizada.
                     </p>
                 </div>
                 <div class="card-footer text-center">
@@ -203,11 +218,13 @@
             </div>
             <div class="card personal-hover">
                 <div class="text-center">
-                    <img src="../img/personal/personal-6.png" class="card-img-top img-personal rounded-circle" alt="personal-6">
+                    <img src="../img/personal/personal-6.png" class="card-img-top img-personal rounded-circle"
+                        alt="personal-6">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title text-center">Sarah Jhonson</h5>
-                    <p class="card-text">Encargada de brindar soporte técnico a los usuarios, solucionando problemas técnicos y brindando asistencia en línea.</p>
+                    <h3 class="card-title text-center">Sarah Jhonson</h3>
+                    <p class="card-text">Encargada de brindar soporte técnico a los usuarios, solucionando problemas
+                        técnicos y brindando asistencia en línea.</p>
                 </div>
                 <div class="card-footer text-center">
                     <small class="text-muted">Soporte técnico</small>
@@ -219,15 +236,13 @@
 
 
     <!-- testimonios -->
-    <div class="container padding-section">
-        <h5 class="text-center cambio-color">TESTIMONIOS</h5>
-        <br>
+    <div class="container padding-section fondito-div">
+        <h2 class="text-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">TESTIMONIOS</h2>
         <p class="text-center">Los testimonios pueden incluir comentarios sobre la calidad del servicio al cliente, la
             experiencia y la satisfacción general del cliente con la transacción. Al leer sus testimonios, nos ayudan a
             tener una mejor idea de lo que podemos mejorar y conocer los aspectos positivos que podemos seguir
             mejorando.
         </p>
-        <br>
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -239,33 +254,36 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../img/testimonios/testimonio-1.jpg" class="d-block w-100 img-testimonio" alt="testimonio-1">
+                    <img src="../img/testimonios/testimonio-1.jpg" class="d-block w-100 img-testimonio"
+                        alt="testimonio-1">
                     <div class="carousel-caption d-md-block cambio-letra rounded">
                         <p>"Estaba buscando un departamento para alquilar en una ciudad nueva, pero no tenía idea de por
                             dónde empezar. Gracias a BetterOption, pude contactar directamente con los agentes
                             inmobiliarios para obtener más información y así fue como encontré uno
                             que se ajustaba perfectamente a mis necesidades"</p>
-                        <h5>Saul Martinez</h5>
+                        <strong>Saul Martinez</strong>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/testimonios/testimonio-2.jpg" class="d-block w-100 img-testimonio" alt="testimonio-2">
+                    <img src="../img/testimonios/testimonio-2.jpg" class="d-block w-100 img-testimonio"
+                        alt="testimonio-2">
                     <div class="carousel-caption d-md-block cambio-letra rounded">
                         <p>"Quiero agradecer a BetterOption por su profesionalismo y dedicación en ayudarme a encontrar
                             la propiedad de mis sueños. Gracias a ella, logré adquirirla a un precio justo y en un
                             tiempo razonable. Recomiendo encarecidamente la página y su equipo de trabajo"</p>
-                        <h5>Gabriela Ortiz</h5>
+                        <strong>Gabriela Ortiz</strong>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/testimonios/testimonio-3.jpg" class="d-block w-100 img-testimonio" alt="testimonio-3">
+                    <img src="../img/testimonios/testimonio-3.jpg" class="d-block w-100 img-testimonio"
+                        alt="testimonio-3">
                     <div class="carousel-caption d-md-block cambio-letra rounded">
                         <p>"Después de buscar durante meses una casa para mi familia, me recomendaron a BetterOption y
                             en ella
                             había una gran variedad de propiedades que se ajustaban a lo que estábamos buscando.
                             Encontramos la casa perfecta para nosotros de forma fácil y segura
                             gracias a ella"</p>
-                        <h5>José Carlos Alcántara</h5>
+                        <strong>José Carlos Alcántara</strong>
                     </div>
                 </div>
             </div>
@@ -290,13 +308,13 @@
             <div class="col mb-3 text-center logo">
                 <div>
                     <a href="../index.html">
-                    <img src="../img/logo.png" alt="logo">
+                        <img src="../img/logo.png" alt="logo">
                     </a>
-                    <h4><span>B</span>etter<span>O</span>ption</a></h4>
+                    <small class="d-flex justify-content-center"><span>B</span>etter<span>O</span>ption</small>
                 </div>
             </div>
             <div class="col mb-3 text-center navegacion">
-                <h5>Navegación</h5>
+                <small>Navegación</small>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
                         <a href="../index.html" class="nav-link p-0 text-muted">Inicio</a>
@@ -313,7 +331,7 @@
                 </ul>
             </div>
             <div class="col mb-3 text-center redes">
-                <h5>Redes</h5>
+                <small>Redes</small>
                 <ul>
                     <a target="_blank" href="https://www.whatsapp.com/"><i
                             class="fa-brands fa-whatsapp fa-2x nav-icono"></i></a>
@@ -330,6 +348,11 @@
         <p class="text-muted text-center">Desarrollado por<span>: Alexandra Ramirez.</span></p>
 
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

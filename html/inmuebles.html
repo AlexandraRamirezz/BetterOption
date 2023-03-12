@@ -5,9 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BetterOption | Quiénes somos</title>
+    <meta name="description" content="Gracias a nosotros, podrás encontrar el inmueble de tus sueños en el mercado inmobiliario. Al buscar una casa, también es importante ser realista y flexible.">
+    <meta name="keywords" content="inmuebles, propiedades, departamentos, casas, terrenos, ubicación, tipo">
+    <title>BetterOption | Inmuebles</title>
 
     <link href="../img/favicon.png" rel="icon">
+        
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,9 +30,8 @@
     <!-- Barra navegadora -->
     <nav class="navbar navbar-expand-lg nav-bar">
         <div class="container-fluid">
-            <h1><a class="navbar-brand nav-bar h1-edicion-logo"
-                    href="../index.html"><span>B</span>etter<span>O</span>ption</a>
-            </h1>
+            <a class="navbar-brand nav-bar edicion-logo animate__animated animate__lightSpeedInLeft"
+                href="../index.html"><span>B</span>etter<span>O</span>ption</a>
             <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -64,8 +71,8 @@
     <div class="p-6 text-center bg-image fondo-inmuebles-img">
         <div class="mask inmuebles-fondo img-fluid">
             <div class="d-flex justify-content-center align-items-center h-100">
-                <div class="text-white">
-                    <h2 class="mb-3">Encuentra el hogar que tienes en mente</h2>
+                <div class="text-white" data-aos="fade-up" data-aos-duration="2000">
+                    <h1 class="mb-3">Encuentra el hogar que tienes en mente</h1>
                     <p>Gracias a nosotros, podrás encontrar el inmueble de tus sueños en el mercado inmobiliario. Al
                         buscar
                         una casa, también es importante ser realista y flexible. Es posible que no encuentres una
@@ -79,19 +86,19 @@
 
 
     <!-- inmuebles -->
-    <div class="container padding-section">
+    <div class="container padding-section fondito-div">
         <iframe style="height: 200px;" class="container"
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d409.9945909880708!2d-77.02053700081399!3d-12.143056589183054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1677139364495!5m2!1ses-419!2spe"
             width="600" style="border:0;" allowfullscreen="ubicacion-inmueble" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-    <div class="container padding-section">
-        <h5 class="text-center cambio-color">INMUEBLES</h5>
+    <div class="container padding-section fondito-div">
+        <h2 class="text-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">INMUEBLES</h2>
         <div class="row">
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-5 py-1 my-1">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-5">
                 <div class="ordenar-por card-body text-center">
-                    <h6>Ubicación:</h6>
+                    <strong class="d-flex justify-content-center">Ubicación:</strong>
                     <select name="select">
                         <option value="value1" selected>Cualquiera</option>
                         <option value="value2">Seleccionada en el mapa</option>
@@ -99,7 +106,7 @@
                     </select>
                 </div>
                 <div class="ordenar-por card-body text-center">
-                    <h6>Tipo:</h6>
+                    <strong class="d-flex justify-content-center">Tipo:</strong>
                     <select name="select">
                         <option value="value1" selected>Todos</option>
                         <option value="value2">Casas</option>
@@ -108,7 +115,7 @@
                     </select>
                 </div>
                 <div class="ordenar-por card-body text-center">
-                    <h6>Ordenar por:</h6>
+                    <strong class="d-flex justify-content-center">Ordenar por:</strong>
                     <select name="select">
                         <option value="value1" selected>Más recientes</option>
                         <option value="value2">Más demandadas</option>
@@ -125,7 +132,7 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Departamento amoblado en Miraflores | $900 mensuales</h5>
+                                <h3 class="card-title">Departamento amoblado en Miraflores | $900 mensuales</h3>
                                 <p class="card-text">Departamento recién construido con un diseño de techos altos y
                                     ventanas de piso a techo que brindan mucha luz natural y vistas de la ciudad. La
                                     cocina está equipada con electrodomésticos de acero ...</p>
@@ -134,16 +141,16 @@
                                 <button class="btn btn-light"><a class="text-decoration-none text-secondary"
                                         href="info-inmuebles.html">Más información</a></button>
                                 <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">Contactar al proveedor</button>
+                                    data-bs-target="#exampleModal1">Contactar al proveedor</button>
 
                                 <!-- Enviar solicitud -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="exampleModal1" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel1" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h2 class="modal-title fs-5" id="exampleModalLabel">Enviar solicitud
-                                                    al proveedor</h2>
+                                                <strong class="modal-title fs-5" id="exampleModalLabel1">Enviar solicitud
+                                                    al proveedor</strong>
                                                 <button class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
@@ -204,7 +211,7 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Casa amoblada en La Molina | $95,700</h5>
+                                <h3 class="card-title">Casa amoblada en La Molina | $95,700</h3>
                                 <p class="card-text">Casa de lujo recientemente construida en un barrio exclusivo
                                     con un diseño de plan de planta abierto con techos altos y detalles de madera y
                                     piedra en todas partes. La cocina gourmet cuenta con encimeras de granito,
@@ -214,16 +221,16 @@
                                 <button class="btn btn-light"><a class="text-decoration-none text-secondary" href="#">Más
                                         información</a></button>
                                 <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal1">Contactar al proveedor</button>
+                                    data-bs-target="#exampleModal2">Contactar al proveedor</button>
 
                                 <!-- Enviar solicitud -->
-                                <div class="modal fade" id="exampleModal1" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                <div class="modal fade" id="exampleModal2" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel2" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h2 class="modal-title fs-5" id="exampleModalLabel">Enviar solicitud
-                                                    al proveedor</h2>
+                                                <strong class="modal-title fs-5" id="exampleModalLabel2">Enviar solicitud
+                                                    al proveedor</strong>
                                                 <button class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
@@ -284,7 +291,7 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Departamento amoblado en Surquillo | $860 mensuales</h5>
+                                <h3 class="card-title">Departamento amoblado en Surquillo | $860 mensuales</h3>
                                 <p class="card-text">Departamento contemporáneo recién renovado en un vecindario de
                                     moda con un diseño industrial con techos altos y detalles de ladrillo expuesto.
                                     La cocina de concepto abierto está equipada con electrodomésticos de acero
@@ -294,16 +301,16 @@
                                 <button class="btn btn-light"><a class="text-decoration-none text-secondary" href="#">Más
                                         información</a></button>
                                 <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal2">Contactar al proveedor</button>
+                                    data-bs-target="#exampleModal3">Contactar al proveedor</button>
 
                                 <!-- Enviar solicitud -->
-                                <div class="modal fade" id="exampleModal2" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                                <div class="modal fade" id="exampleModal3" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel3" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h2 class="modal-title fs-5" id="exampleModalLabel">Enviar solicitud
-                                                    al proveedor</h2>
+                                                <strong class="modal-title fs-5" id="exampleModalLabel3">Enviar solicitud
+                                                    al proveedor</strong>
                                                 <button class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
@@ -364,7 +371,7 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Casa amoblada en Puente Piedra | $40,200</h5>
+                                <h3 class="card-title">Casa amoblada en Puente Piedra | $40,200</h3>
                                 <p class="card-text">Casa en necesidad de renovación en un barrio tranquilo con un
                                     gran potencial. La casa tiene una distribución clásica con tres dormitorios y
                                     dos baños, así como una cocina y un comedor separados y una amplia sala de
@@ -374,16 +381,16 @@
                                 <button class="btn btn-light"><a class="text-decoration-none text-secondary" href="#">Más
                                         información</a></button>
                                 <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal3">Contactar al proveedor</button>
+                                    data-bs-target="#exampleModal4">Contactar al proveedor</button>
 
                                 <!-- Enviar solicitud -->
-                                <div class="modal fade" id="exampleModal3" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                                <div class="modal fade" id="exampleModal4" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel4" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h2 class="modal-title fs-5" id="exampleModalLabel">Enviar solicitud
-                                                    al proveedor</h2>
+                                                <strong class="modal-title fs-5" id="exampleModalLabel4">Enviar solicitud
+                                                    al proveedor</strong>
                                                 <button class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
@@ -444,7 +451,7 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Casa amoblada en Santiago de Surco | $30,000</h5>
+                                <h3 class="card-title">Casa amoblada en Santiago de Surco | $30,000</h3>
                                 <p class="card-text">Casa pequeña de un dormitorio pero encantadora, se encuentra en
                                     una ciudad universitaria en el centro de la ciudad. La casa cuenta con una sala
                                     de estar con chimenea, una cocina y comedor separados, y un baño completo. El
@@ -454,16 +461,16 @@
                                 <button class="btn btn-light"><a class="text-decoration-none text-secondary" href="#">Más
                                         información</a></button>
                                 <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal4">Contactar al proveedor</button>
+                                    data-bs-target="#exampleModal5">Contactar al proveedor</button>
 
                                 <!-- Enviar solicitud -->
-                                <div class="modal fade" id="exampleModal4" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                                <div class="modal fade" id="exampleModal5" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel5" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h2 class="modal-title fs-5" id="exampleModalLabel">Enviar solicitud
-                                                    al proveedor</h2>
+                                                <strong class="modal-title fs-5" id="exampleModalLabel5">Enviar solicitud
+                                                    al proveedor</strong>
                                                 <button class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
@@ -525,8 +532,8 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Departamento amoblado en Cercado de Lima | $640 mensuales
-                                </h5>
+                                <h3 class="card-title">Departamento amoblado en Cercado de Lima | $640 mensuales
+                                </h3>
                                 <p class="card-text">Departamento con excelentes vistas pero en una ubicación menos
                                     deseable, tiene una vista impresionante de la ciudad y cuenta con una cocina
                                     abierta y una sala de estar con mucha luz natural. Sin embargo, ...</p>
@@ -535,16 +542,16 @@
                                 <button class="btn btn-light"><a class="text-decoration-none text-secondary" href="#">Más
                                         información</a></button>
                                 <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal5">Contactar al proveedor</button>
+                                    data-bs-target="#exampleModal6">Contactar al proveedor</button>
 
                                 <!-- Enviar solicitud -->
-                                <div class="modal fade" id="exampleModal5" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel5" aria-hidden="true">
+                                <div class="modal fade" id="exampleModal6" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel6" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h2 class="modal-title fs-5" id="exampleModalLabel">Enviar solicitud
-                                                    al proveedor</h2>
+                                                <strong class="modal-title fs-5" id="exampleModalLabel6">Enviar solicitud
+                                                    al proveedor</strong>
                                                 <button class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
@@ -629,13 +636,13 @@
             <div class="col mb-3 text-center logo">
                 <div>
                     <a href="../index.html">
-                    <img src="../img/logo.png" alt="logo">
+                        <img src="../img/logo.png" alt="logo">
                     </a>
-                    <h4><span>B</span>etter<span>O</span>ption</a></h4>
+                    <small class="d-flex justify-content-center"><span>B</span>etter<span>O</span>ption</small>
                 </div>
             </div>
             <div class="col mb-3 text-center navegacion">
-                <h5>Navegación</h5>
+                <small>Navegación</small>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
                         <a href="../index.html" class="nav-link p-0 text-muted">Inicio</a>
@@ -652,7 +659,7 @@
                 </ul>
             </div>
             <div class="col mb-3 text-center redes">
-                <h5>Redes</h5>
+                <small>Redes</small>
                 <ul>
                     <a target="_blank" href="https://www.whatsapp.com/"><i
                             class="fa-brands fa-whatsapp fa-2x nav-icono"></i></a>
@@ -669,6 +676,11 @@
         <p class="text-muted text-center">Desarrollado por<span>: Alexandra Ramirez.</span></p>
 
     </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
