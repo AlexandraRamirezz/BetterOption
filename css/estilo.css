@@ -27,6 +27,10 @@ span {
   background-image: radial-gradient(rgba(109, 109, 107, 0.1254901961), white);
 }
 
+.img-pos-inmueble {
+  display: flex;
+}
+
 /* header */
 .nav-bar {
   background-color: #212529;
@@ -113,7 +117,7 @@ span {
 }
 
 .imgCarousel {
-  height: 400px;
+  height: 600px;
   object-fit: cover;
 }
 
@@ -242,10 +246,6 @@ span {
   background-color: #f3f0ef;
 }
 
-.fondo-form {
-  background-color: rgb(223, 220, 220);
-}
-
 .form-check-input:checked {
   background-color: #64a464;
   border-color: #64a464;
@@ -254,7 +254,6 @@ span {
 /* footer */
 .nav-icono {
   color: black;
-  padding-right: 2px;
 }
 
 .fondo-footer {
@@ -278,6 +277,7 @@ span {
   color: rgba(0, 0, 0, 0.764);
   font-weight: 100;
   font-size: 18px;
+  font-weight: bold;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -288,6 +288,7 @@ span {
   color: rgba(0, 0, 0, 0.764);
   font-weight: 100;
   font-size: 18px;
+  font-weight: bold;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -330,6 +331,18 @@ span {
     gap: 20px;
     grid-template-areas: "descripcion botones" "ofrece ofrece" "datos datos" "plano-mapa plano-mapa";
   }
+  .mobile-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .mobile-btn-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 @media (min-width: 992px) {
   .mobile-btn {
@@ -345,11 +358,6 @@ span {
     justify-content: space-around;
   }
 }
-@media (min-width: 351px) and (max-width: 767px) {
-  .img-pos-inmueble {
-    text-align: center;
-  }
-}
 @media (max-width: 575px) {
   .grid-footer {
     display: grid;
@@ -361,16 +369,6 @@ span {
   }
   .color-resp {
     margin-left: 0px;
-  }
-}
-@media (max-width: 350px) {
-  .img-pos-inmueble {
-    display: flex;
-  }
-}
-@media (min-width: 768px) {
-  .img-pos-inmueble {
-    display: flex;
   }
 }
 /* vista desk */

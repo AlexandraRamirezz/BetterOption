@@ -48,6 +48,18 @@
         "datos datos" 
         "plano-mapa plano-mapa";
 	}
+	.mobile-btn {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+}
+@media (max-width: 767px) {
+	.mobile-btn-2 {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
 }
 @media (min-width: 992px) {
 	.mobile-btn {
@@ -61,11 +73,6 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-	}
-}
-@media (min-width: 351px) and (max-width: 767px) {
-	.img-pos-inmueble {
-		text-align: center;
 	}
 }
 @media (max-width: 575px) {
@@ -82,16 +89,6 @@
 	}
 	.color-resp {
 		margin-left: 0px;
-	}
-}
-@media (max-width: 350px) {
-	.img-pos-inmueble {
-		display: flex;
-	}
-}
-@media (min-width: 768px) {
-	.img-pos-inmueble {
-		display: flex;
 	}
 }
 

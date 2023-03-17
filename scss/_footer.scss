@@ -4,10 +4,10 @@
 	color: $color-inicio-trasp;
 	font-weight: 100;
 	font-size: 18px;
+	font-weight: bold;
 }
 .nav-icono {
 	color: $color-black;
-	padding-right: 2px;
 }
 .fondo-footer {
 	background-color: $color-cuaternario;
@@ -17,7 +17,6 @@
 
 	small {
 		@include small-f;
-		font-weight: bold;
 	}
 }
 .navegacion {

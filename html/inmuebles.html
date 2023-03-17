@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gracias a nosotros, podrás encontrar el inmueble de tus sueños en el mercado inmobiliario. Al buscar una casa, también es importante ser realista y flexible.">
+    <meta name="description"
+        content="Gracias a nosotros, podrás encontrar el inmueble de tus sueños en el mercado inmobiliario. Al buscar una casa, también es importante ser realista y flexible.">
     <meta name="keywords" content="inmuebles, propiedades, departamentos, casas, terrenos, ubicación, tipo">
     <title>BetterOption | Inmuebles</title>
 
     <link href="../img/favicon.png" rel="icon">
-        
+
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -74,8 +75,7 @@
                 <div class="text-white" data-aos="fade-up" data-aos-duration="2000">
                     <h1 class="mb-3">Encuentra el hogar que tienes en mente</h1>
                     <p>Gracias a nosotros, podrás encontrar el inmueble de tus sueños en el mercado inmobiliario. Al
-                        buscar
-                        una casa, también es importante ser realista y flexible. Es posible que no encuentres una
+                        buscar una casa, también es importante ser realista y flexible. Es posible que no encuentres una
                         propiedad que cumpla con todos tus requisitos, por lo que es importante estar dispuesto a hacer
                         compromisos en función de tus necesidades y presupuesto.</p>
                 </div>
@@ -87,14 +87,15 @@
 
     <!-- inmuebles -->
     <div class="container padding-section fondito-div">
-        <iframe style="height: 200px;" class="container"
+        <iframe style="height: 250px;" class="container"
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d409.9945909880708!2d-77.02053700081399!3d-12.143056589183054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1677139364495!5m2!1ses-419!2spe"
-            width="600" style="border:0;" allowfullscreen="ubicacion-inmueble" loading="lazy"
+            style="border:0;" allowfullscreen="ubicacion-inmueble" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <div class="container padding-section fondito-div">
-        <h2 class="text-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">INMUEBLES</h2>
+        <h2 class="text-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">INMUEBLES
+        </h2>
         <div class="row">
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-5">
                 <div class="ordenar-por card-body text-center">
@@ -111,7 +112,7 @@
                         <option value="value1" selected>Todos</option>
                         <option value="value2">Casas</option>
                         <option value="value3">Departamentos</option>
-                        <option value="value3">Terrenos</option>
+                        <option value="value4">Terrenos</option>
                     </select>
                 </div>
                 <div class="ordenar-por card-body text-center">
@@ -128,20 +129,25 @@
                 <div class="card mb-3 div-inmueble-reciente">
                     <div class="row g-0">
                         <div class="col-md-4 img-pos-inmueble">
-                            <img src="../img/inmuebles/diseño-1.jpg" class="img-fluid rounded-start" alt="diseño-1">
+                            <img src="../img/inmuebles/diseño-1.png" class="img-fluid rounded" alt="diseño-1">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h3 class="card-title">Departamento amoblado en Miraflores | $900 mensuales</h3>
                                 <p class="card-text">Departamento recién construido con un diseño de techos altos y
-                                    ventanas de piso a techo que brindan mucha luz natural y vistas de la ciudad. La
-                                    cocina está equipada con electrodomésticos de acero ...</p>
+                                    ventanas de piso a techo que brindan mucha luz natural y vistas
+                                    de la ciudad. La cocina está equipada con electrodomésticos de acero
+                                    inoxidable, mientras que el baño principal cuenta
+                                    con una bañera de inmersión. El edificio cuenta con comodidades modernas, como una terraza
+                                    en la azotea, un gimnasio y una piscina climatizada.</p>
                                 <p class="card-text"><small class="text-muted">Publicado hace 48 minutos | 2
                                         solicitudes pendientes</small></p>
-                                <button class="btn btn-light"><a class="text-decoration-none text-secondary"
-                                        href="info-inmuebles.html">Más información</a></button>
-                                <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal1">Contactar al proveedor</button>
+                                <div class="mobile-btn-2">
+                                    <button class="btn btn-light"><a class="text-decoration-none text-secondary"
+                                            href="info-pages-inmuebles/1er-inmueble.html">Más información</a></button>
+                                    <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Contactar al proveedor</button>
+                                </div>
 
                                 <!-- Enviar solicitud -->
                                 <div class="modal fade" id="exampleModal1" tabindex="-1"
@@ -149,7 +155,8 @@
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <strong class="modal-title fs-5" id="exampleModalLabel1">Enviar solicitud
+                                                <strong class="modal-title fs-5" id="exampleModalLabel1">Enviar
+                                                    solicitud
                                                     al proveedor</strong>
                                                 <button class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
@@ -177,8 +184,8 @@
                                                     </div>
                                                     <div class="col-12">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="checkbox"
-                                                                id="invalidCheck" required />
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="checkbox" id="invalidCheck" required />
                                                             <label class="form-check-label" for="invalidCheck">Acepto
                                                                 todos los términos y
                                                                 condiciones
@@ -199,7 +206,6 @@
                                     </div>
                                 </div>
 
-
                             </div>
                         </div>
                     </div>
@@ -207,21 +213,25 @@
                 <div class="card mb-3 div-inmueble-reciente">
                     <div class="row g-0">
                         <div class="col-md-4 img-pos-inmueble">
-                            <img src="../img/inmuebles/diseño-2.png" class="img-fluid rounded-start" alt="diseño-2">
+                            <img src="../img/inmuebles/diseño-2.jpg" class="img-fluid rounded" alt="diseño-2">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h3 class="card-title">Casa amoblada en La Molina | $95,700</h3>
-                                <p class="card-text">Casa de lujo recientemente construida en un barrio exclusivo
-                                    con un diseño de plan de planta abierto con techos altos y detalles de madera y
-                                    piedra en todas partes. La cocina gourmet cuenta con encimeras de granito,
-                                    electrodomésticos de alta gama y una despensa de ...</p>
+                                <p class="card-text">Casa de lujo recientemente construida en un barrio exclusivo con un diseño
+                                    de plan de planta abierto con techos altos y detalles de madera y piedra en todas partes. La
+                                    cocina gourmet cuenta con encimeras de granito, electrodomésticos de alta gama y una
+                                    despensa de almacenamiento. Las habitaciones son amplias y luminosas, con baños privados y
+                                    vestidores. Incluye una piscina, así como un área de barbacoa.</p>
                                 <p class="card-text"><small class="text-muted">Publicado hace 1 hora | 3 solicitudes
                                         pendientes</small></p>
-                                <button class="btn btn-light"><a class="text-decoration-none text-secondary" href="#">Más
-                                        información</a></button>
-                                <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal2">Contactar al proveedor</button>
+                                <div class="mobile-btn-2">
+                                    <button class="btn btn-light"><a class="text-decoration-none text-secondary"
+                                            href="info-pages-inmuebles/2do-inmueble.html">Más
+                                            información</a></button>
+                                    <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal2">Contactar al proveedor</button>
+                                </div>
 
                                 <!-- Enviar solicitud -->
                                 <div class="modal fade" id="exampleModal2" tabindex="-1"
@@ -229,7 +239,8 @@
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <strong class="modal-title fs-5" id="exampleModalLabel2">Enviar solicitud
+                                                <strong class="modal-title fs-5" id="exampleModalLabel2">Enviar
+                                                    solicitud
                                                     al proveedor</strong>
                                                 <button class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
@@ -257,8 +268,8 @@
                                                     </div>
                                                     <div class="col-12">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="checkbox"
-                                                                id="invalidCheck" required />
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="checkbox" id="invalidCheck" required />
                                                             <label class="form-check-label" for="invalidCheck">Acepto
                                                                 todos los términos y
                                                                 condiciones
@@ -279,7 +290,6 @@
                                     </div>
                                 </div>
 
-
                             </div>
                         </div>
                     </div>
@@ -287,21 +297,25 @@
                 <div class="card mb-3 div-inmueble-reciente">
                     <div class="row g-0">
                         <div class="col-md-4 img-pos-inmueble">
-                            <img src="../img/inmuebles/diseño-3.jpg" class="img-fluid rounded-start" alt="diseño-3">
+                            <img src="../img/inmuebles/diseño-3.jpg" class="img-fluid rounded" alt="diseño-3">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h3 class="card-title">Departamento amoblado en Surquillo | $860 mensuales</h3>
-                                <p class="card-text">Departamento contemporáneo recién renovado en un vecindario de
-                                    moda con un diseño industrial con techos altos y detalles de ladrillo expuesto.
-                                    La cocina de concepto abierto está equipada con electrodomésticos de acero
-                                    inoxidable y encimeras de granito. El espacio de estar es amplio y ...</p>
+                                <h3 class="card-title">Casa amoblada en Surquillo | $120,050</h3>
+                                <p class="card-text">Casa contemporánea recién renovada en un vecindario de moda con un
+                                    diseño industrial con techos altos y detalles de ladrillo expuesto. La cocina de concepto
+                                    abierto está equipada con electrodomésticos de acero inoxidable y encimeras de granito. El
+                                    espacio de estar es amplio y luminoso, con ventanas grandes que brindan vistas panorámicas.
+                                    El edificio cuenta con una terraza en la azotea compartida con vistas de la ciudad.</p>
                                 <p class="card-text"><small class="text-muted">Publicado hace 2 horas | 9
                                         solicitudes pendientes</small></p>
-                                <button class="btn btn-light"><a class="text-decoration-none text-secondary" href="#">Más
-                                        información</a></button>
-                                <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal3">Contactar al proveedor</button>
+                                <div class="mobile-btn-2">
+                                    <button class="btn btn-light"><a class="text-decoration-none text-secondary"
+                                            href="info-pages-inmuebles/3er-inmueble.html">Más
+                                            información</a></button>
+                                    <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal3">Contactar al proveedor</button>
+                                </div>
 
                                 <!-- Enviar solicitud -->
                                 <div class="modal fade" id="exampleModal3" tabindex="-1"
@@ -309,7 +323,8 @@
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <strong class="modal-title fs-5" id="exampleModalLabel3">Enviar solicitud
+                                                <strong class="modal-title fs-5" id="exampleModalLabel3">Enviar
+                                                    solicitud
                                                     al proveedor</strong>
                                                 <button class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
@@ -337,8 +352,8 @@
                                                     </div>
                                                     <div class="col-12">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="checkbox"
-                                                                id="invalidCheck" required />
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="checkbox" id="invalidCheck" required />
                                                             <label class="form-check-label" for="invalidCheck">Acepto
                                                                 todos los términos y
                                                                 condiciones
@@ -359,7 +374,6 @@
                                     </div>
                                 </div>
 
-
                             </div>
                         </div>
                     </div>
@@ -367,21 +381,25 @@
                 <div class="card mb-3 div-inmueble-reciente">
                     <div class="row g-0">
                         <div class="col-md-4 img-pos-inmueble">
-                            <img src="../img/inmuebles/diseño-4.jpg" class="img-fluid rounded-start" alt="diseño-4">
+                            <img src="../img/inmuebles/diseño-4.jpg" class="img-fluid rounded" alt="diseño-4">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h3 class="card-title">Casa amoblada en Puente Piedra | $40,200</h3>
-                                <p class="card-text">Casa en necesidad de renovación en un barrio tranquilo con un
-                                    gran potencial. La casa tiene una distribución clásica con tres dormitorios y
-                                    dos baños, así como una cocina y un comedor separados y una amplia sala de
-                                    estar. El patio trasero es espacioso y ofrece un gran espacio...</p>
+                                <h3 class="card-title">Casa desamueblada en Puente Piedra | $40,200</h3>
+                                <p class="card-text">Casa en necesidad de renovación en un barrio tranquilo con un gran
+                                    potencial. La casa tiene una distribución clásica con tres dormitorios y dos baños, así como
+                                    una cocina y un comedor separados y una amplia sala de estar. El patio trasero es espacioso
+                                    y ofrece un gran espacio para jardinería y entretenimiento. Esta propiedad es perfecta para
+                                    alguien que busca una casa asequible con un gran potencial de revalorización.</p>
                                 <p class="card-text"><small class="text-muted">Publicado hace 5 horas | 5
                                         solicitudes pendientes</small></p>
-                                <button class="btn btn-light"><a class="text-decoration-none text-secondary" href="#">Más
-                                        información</a></button>
-                                <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal4">Contactar al proveedor</button>
+                                <div class="mobile-btn-2">
+                                    <button class="btn btn-light"><a class="text-decoration-none text-secondary"
+                                            href="info-pages-inmuebles/4to-inmueble.html">Más
+                                            información</a></button>
+                                    <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal4">Contactar al proveedor</button>
+                                </div>
 
                                 <!-- Enviar solicitud -->
                                 <div class="modal fade" id="exampleModal4" tabindex="-1"
@@ -389,7 +407,8 @@
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <strong class="modal-title fs-5" id="exampleModalLabel4">Enviar solicitud
+                                                <strong class="modal-title fs-5" id="exampleModalLabel4">Enviar
+                                                    solicitud
                                                     al proveedor</strong>
                                                 <button class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
@@ -417,8 +436,8 @@
                                                     </div>
                                                     <div class="col-12">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="checkbox"
-                                                                id="invalidCheck" required />
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="checkbox" id="invalidCheck" required />
                                                             <label class="form-check-label" for="invalidCheck">Acepto
                                                                 todos los términos y
                                                                 condiciones
@@ -439,7 +458,6 @@
                                     </div>
                                 </div>
 
-
                             </div>
                         </div>
                     </div>
@@ -447,21 +465,25 @@
                 <div class="card mb-3 div-inmueble-reciente">
                     <div class="row g-0">
                         <div class="col-md-4 img-pos-inmueble">
-                            <img src="../img/inmuebles/diseño-5.jpeg" class="img-fluid rounded-start" alt="diseño-5">
+                            <img src="../img/inmuebles/diseño-5.jpeg" class="img-fluid rounded" alt="diseño-5">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h3 class="card-title">Casa amoblada en Santiago de Surco | $30,000</h3>
-                                <p class="card-text">Casa pequeña de un dormitorio pero encantadora, se encuentra en
-                                    una ciudad universitaria en el centro de la ciudad. La casa cuenta con una sala
-                                    de estar con chimenea, una cocina y comedor separados, y un baño completo. El
-                                    patio trasero es pequeño pero privado y ofrece un ...</p>
+                                <h3 class="card-title">Departamento amoblado en Santiago de Surco | $700 mensuales</h3>
+                                <p class="card-text">Departamento pequeño de un dormitorio pero encantador, se encuentra en una ciudad
+                                    universitaria en el centro de la ciudad. El inmueble cuenta con una sala de estar con chimenea,
+                                    una cocina y comedor separados, y un baño completo. El patio trasero es pequeño pero privado
+                                    y ofrece un espacio para relajarse al aire libre. El precio se ha reducido para reflejar el
+                                    tamaño más pequeño del departamento.</p>
                                 <p class="card-text"><small class="text-muted">Publicado hace 8 horas | 9
                                         solicitudes pendientes</small></p>
-                                <button class="btn btn-light"><a class="text-decoration-none text-secondary" href="#">Más
-                                        información</a></button>
-                                <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal5">Contactar al proveedor</button>
+                                <div class="mobile-btn-2">
+                                    <button class="btn btn-light"><a class="text-decoration-none text-secondary"
+                                            href="info-pages-inmuebles/5to-inmueble.html">Más
+                                            información</a></button>
+                                    <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal5">Contactar al proveedor</button>
+                                </div>
 
                                 <!-- Enviar solicitud -->
                                 <div class="modal fade" id="exampleModal5" tabindex="-1"
@@ -469,7 +491,8 @@
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <strong class="modal-title fs-5" id="exampleModalLabel5">Enviar solicitud
+                                                <strong class="modal-title fs-5" id="exampleModalLabel5">Enviar
+                                                    solicitud
                                                     al proveedor</strong>
                                                 <button class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
@@ -497,8 +520,8 @@
                                                     </div>
                                                     <div class="col-12">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="checkbox"
-                                                                id="invalidCheck" required />
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="checkbox" id="invalidCheck" required />
                                                             <label class="form-check-label" for="invalidCheck">Acepto
                                                                 todos los términos y
                                                                 condiciones
@@ -518,7 +541,6 @@
                                         </div>
                                     </div>
                                 </div>
-
 
                             </div>
                         </div>
@@ -527,22 +549,26 @@
                 <div class="card mb-3 div-inmueble-reciente">
                     <div class="row g-0">
                         <div class="col-md-4 img-pos-inmueble">
-                            <img src="../img/inmuebles/diseño-6.jpg"
-                                class="img-fluid rounded-start acomodar-tablet-movil" alt="diseño-6">
+                            <img src="../img/inmuebles/diseño-6.jpg" class="img-fluid rounded" alt="diseño-6">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h3 class="card-title">Departamento amoblado en Cercado de Lima | $640 mensuales
                                 </h3>
-                                <p class="card-text">Departamento con excelentes vistas pero en una ubicación menos
-                                    deseable, tiene una vista impresionante de la ciudad y cuenta con una cocina
-                                    abierta y una sala de estar con mucha luz natural. Sin embargo, ...</p>
+                                <p class="card-text">Departamento con excelentes vistas pero en una ubicación menos deseable,
+                                    tiene una vista impresionante de la ciudad y cuenta con una cocina abierta y una sala de
+                                    estar con mucha luz natural. Sin embargo, la ubicación no es ideal, ya que está ubicado en
+                                    una calle concurrida y cerca de una zona industrial. El precio se ha reducido para reflejar
+                                    la ubicación menos deseable.</p>
                                 <p class="card-text"><small class="text-muted">Publicado hace 10 horas | 12
                                         solicitudes pendientes</small></p>
-                                <button class="btn btn-light"><a class="text-decoration-none text-secondary" href="#">Más
-                                        información</a></button>
-                                <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal6">Contactar al proveedor</button>
+                                <div class="mobile-btn-2">
+                                    <button class="btn btn-light"><a class="text-decoration-none text-secondary"
+                                            href="info-pages-inmuebles/6to-inmueble.html">Más
+                                            información</a></button>
+                                    <button class="btn btn-primary btn-dark" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal6">Contactar al proveedor</button>
+                                </div>
 
                                 <!-- Enviar solicitud -->
                                 <div class="modal fade" id="exampleModal6" tabindex="-1"
@@ -550,7 +576,8 @@
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <strong class="modal-title fs-5" id="exampleModalLabel6">Enviar solicitud
+                                                <strong class="modal-title fs-5" id="exampleModalLabel6">Enviar
+                                                    solicitud
                                                     al proveedor</strong>
                                                 <button class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
@@ -578,8 +605,8 @@
                                                     </div>
                                                     <div class="col-12">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="checkbox"
-                                                                id="invalidCheck" required />
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="checkbox" id="invalidCheck" required />
                                                             <label class="form-check-label" for="invalidCheck">Acepto
                                                                 todos los términos y
                                                                 condiciones
@@ -599,7 +626,6 @@
                                         </div>
                                     </div>
                                 </div>
-
 
                             </div>
                         </div>
@@ -612,22 +638,22 @@
             <nav aria-label="tabla de contenido">
                 <br>
                 <ul class="pagination">
-                  <li class="page-item disabled">
-                    <span class="page-link">Anterior</span>
-                  </li>
-                  <li class="page-item active" aria-current="page">
-                    <span class="page-link">1</span>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Siguiente</a>
-                  </li>
+                    <li class="page-item disabled">
+                        <span class="page-link">Anterior</span>
+                    </li>
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link">1</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Siguiente</a>
+                    </li>
                 </ul>
-              </nav>
+            </nav>
         </div>
     </div>
-    
+
 
 
     <!-- footer -->
@@ -673,10 +699,15 @@
             </div>
         </div>
         <p class="text-muted text-center">Copyright © 2023 - Todos los derechos reservados</p>
-        <p class="text-muted text-center">Desarrollado por<span>: Alexandra Ramirez.</span></p>
+        <div class="border-top border-light grid-footer py-2 my-3">
+            <div>
+                <p class="text-muted text-center">Desarrollado por<span>: Alexandra Ramirez.</span></p>
+                <p class="text-muted text-center">Curso<span>: Desarrollo Web</span> en <a class="text-dark" target="_blank" href="https://www.coderhouse.com.pe/">Coderhouse</a></p>
+            </div>
+        </div>
 
     </footer>
-    
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
