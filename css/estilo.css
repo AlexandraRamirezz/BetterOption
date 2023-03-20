@@ -295,9 +295,6 @@ span {
 /* media queries */
 /*vista móvil */
 @media (max-width: 600px) {
-  .ul-espacio {
-    padding-left: 100px;
-  }
   .inicio-fondo {
     background-color: rgba(0, 0, 0, 0.764);
     padding: 40px;
@@ -319,9 +316,6 @@ span {
 }
 /* vista tablet */
 @media (min-width: 601px) and (max-width: 900px) {
-  .ul-espacio {
-    padding-left: 50px;
-  }
   .inicio-fondo {
     background-color: rgba(0, 0, 0, 0.764);
     padding: 138px;
@@ -373,9 +367,6 @@ span {
 }
 /* vista desk */
 @media (min-width: 901px) {
-  .ul-espacio {
-    padding-left: 50px;
-  }
   .inicio-fondo {
     background-color: rgba(0, 0, 0, 0.764);
     padding: 188px;
@@ -385,15 +376,26 @@ span {
     gap: 20px;
     grid-template-areas: "descripcion botones" "ofrece ofrece" "datos datos" "plano-mapa plano-mapa";
   }
-  .espacio {
-    padding-left: 110px;
-  }
 }
 @media (min-width: 992px) {
   .mobile-btn {
     display: flex;
     flex-direction: column;
     gap: 25px;
+  }
+  .posicion {
+    display: flex;
+    justify-content: space-around;
+  }
+  .posicion ul {
+    gap: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .posicion li {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
   }
 }
 
