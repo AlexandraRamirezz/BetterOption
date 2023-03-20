@@ -49,10 +49,6 @@ span {
   color: white;
 }
 
-.espacio {
-  padding-left: 110px;
-}
-
 .nav-bar-edicion {
   color: white;
   padding: 5px;
@@ -101,6 +97,10 @@ span {
 
 .page-link {
   color: black;
+}
+
+.btn-bg {
+  --bs-btn-bg: #64a464;
 }
 
 .pagination {
@@ -216,13 +216,13 @@ span {
 
 .img-testimonio {
   background-size: cover;
-  height: 420px;
+  height: 470px;
   object-fit: cover;
 }
 
 .cambio-letra {
   color: #212529;
-  background-color: rgba(255, 255, 255, 0.82);
+  background-color: rgba(255, 255, 255, 0.911);
   padding: 10px;
 }
 
@@ -384,6 +384,9 @@ span {
     display: grid;
     gap: 20px;
     grid-template-areas: "descripcion botones" "ofrece ofrece" "datos datos" "plano-mapa plano-mapa";
+  }
+  .espacio {
+    padding-left: 110px;
   }
 }
 @media (min-width: 992px) {

@@ -16,6 +16,9 @@
 .page-link {
 	color: $color-black;
 }
+.btn-bg {
+	--bs-btn-bg: #64a464;
+}
 .pagination {
 	--bs-pagination-color: #64a464;
 	--bs-pagination-hover-color: #64a464;

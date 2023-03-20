@@ -96,36 +96,54 @@
     <div class="container padding-section fondito-div">
         <h2 class="text-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">INMUEBLES
         </h2>
+        <p class="py-2">¿Buscas una vivienda cerca a tu ubicación actual? ¿Prefieres un
+            departamento en el centro de la ciudad? ¿O quizás una casa en las afueras? Sea cual sea tu preferencia,
+            contamos con una gran variedad de opciones para que encuentres el inmueble que mejor se adapte a tus
+            necesidades.</p>
         <div class="row">
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-5">
-                <div class="ordenar-por card-body text-center">
-                    <strong class="d-flex justify-content-center">Ubicación:</strong>
-                    <select name="select">
-                        <option value="value1" selected>Cualquiera</option>
-                        <option value="value2">Seleccionada en el mapa</option>
-                        <option value="value3">Mi ubicación actual</option>
-                    </select>
+            <form method="get">
+                <div class="row g-0">
+                    <div class="col-sm-3">
+                        <select name="propertyType" class="form-select header-container__property-form"
+                            aria-label="Tipo de propiedad">
+                            <option value="0" selected disabled>Ubicación</option>
+                            <option value="cualquiera">Cualquiera</option>
+                            <option value="mapa">Seleccionada en el mapa</option>
+                            <option value="ubi_actual">Mi ubicación actual</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-2">
+                        <select name="propertyType" class="form-select header-container__property-form"
+                            aria-label="Tipo de propiedad">
+                            <option value="0" selected disabled>Tipo</option>
+                            <option value="todos">Todos</option>
+                            <option value="casas">Casas</option>
+                            <option value="departamentos">Departamentos</option>
+                            <option value="terreno">Terrenos</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-2">
+                        <select name="propertyType" class="form-select header-container__property-form"
+                            aria-label="Tipo de propiedad">
+                            <option value="0" selected disabled>Ordenar por</option>
+                            <option value="recientes">Más recientes</option>
+                            <option value="baratas">Más baratas</option>
+                            <option value="demandadas">Más demandadas</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4 header-container__search-section">
+                        <input type="hidden" id="hidden-geo-id" name="hidden-geo-id">
+                        <input type="search" id="search-bar" data-test="search-bar" name="geo" autocomplete="off"
+                            class="form-control header-container__search-form"
+                            placeholder="Ingresa el barrio, la ciudad o la dirección...">
+                    </div>
+                    <button type="submit" class="btn btn-dark col-sm-1">
+                        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    </button>
                 </div>
-                <div class="ordenar-por card-body text-center">
-                    <strong class="d-flex justify-content-center">Tipo:</strong>
-                    <select name="select">
-                        <option value="value1" selected>Todos</option>
-                        <option value="value2">Casas</option>
-                        <option value="value3">Departamentos</option>
-                        <option value="value4">Terrenos</option>
-                    </select>
-                </div>
-                <div class="ordenar-por card-body text-center">
-                    <strong class="d-flex justify-content-center">Ordenar por:</strong>
-                    <select name="select">
-                        <option value="value1" selected>Más recientes</option>
-                        <option value="value2">Más demandadas</option>
-                        <option value="value3">En oferta</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-12">
-                <br>
+            </form>
+
+            <div class="col-12 py-4">
                 <div class="card mb-3 div-inmueble-reciente">
                     <div class="row g-0">
                         <div class="col-md-4 img-pos-inmueble">
@@ -138,7 +156,8 @@
                                     ventanas de piso a techo que brindan mucha luz natural y vistas
                                     de la ciudad. La cocina está equipada con electrodomésticos de acero
                                     inoxidable, mientras que el baño principal cuenta
-                                    con una bañera de inmersión. El edificio cuenta con comodidades modernas, como una terraza
+                                    con una bañera de inmersión. El edificio cuenta con comodidades modernas, como una
+                                    terraza
                                     en la azotea, un gimnasio y una piscina climatizada.</p>
                                 <p class="card-text"><small class="text-muted">Publicado hace 48 minutos | 2
                                         solicitudes pendientes</small></p>
@@ -218,10 +237,13 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h3 class="card-title">Casa amoblada en La Molina | $95,700</h3>
-                                <p class="card-text">Casa de lujo recientemente construida en un barrio exclusivo con un diseño
-                                    de plan de planta abierto con techos altos y detalles de madera y piedra en todas partes. La
+                                <p class="card-text">Casa de lujo recientemente construida en un barrio exclusivo con un
+                                    diseño
+                                    de plan de planta abierto con techos altos y detalles de madera y piedra en todas
+                                    partes. La
                                     cocina gourmet cuenta con encimeras de granito, electrodomésticos de alta gama y una
-                                    despensa de almacenamiento. Las habitaciones son amplias y luminosas, con baños privados y
+                                    despensa de almacenamiento. Las habitaciones son amplias y luminosas, con baños
+                                    privados y
                                     vestidores. Incluye una piscina, así como un área de barbacoa.</p>
                                 <p class="card-text"><small class="text-muted">Publicado hace 1 hora | 3 solicitudes
                                         pendientes</small></p>
@@ -303,10 +325,14 @@
                             <div class="card-body">
                                 <h3 class="card-title">Casa amoblada en Surquillo | $120,050</h3>
                                 <p class="card-text">Casa contemporánea recién renovada en un vecindario de moda con un
-                                    diseño industrial con techos altos y detalles de ladrillo expuesto. La cocina de concepto
-                                    abierto está equipada con electrodomésticos de acero inoxidable y encimeras de granito. El
-                                    espacio de estar es amplio y luminoso, con ventanas grandes que brindan vistas panorámicas.
-                                    El edificio cuenta con una terraza en la azotea compartida con vistas de la ciudad.</p>
+                                    diseño industrial con techos altos y detalles de ladrillo expuesto. La cocina de
+                                    concepto
+                                    abierto está equipada con electrodomésticos de acero inoxidable y encimeras de
+                                    granito. El
+                                    espacio de estar es amplio y luminoso, con ventanas grandes que brindan vistas
+                                    panorámicas.
+                                    El edificio cuenta con una terraza en la azotea compartida con vistas de la ciudad.
+                                </p>
                                 <p class="card-text"><small class="text-muted">Publicado hace 2 horas | 9
                                         solicitudes pendientes</small></p>
                                 <div class="mobile-btn-2">
@@ -387,9 +413,12 @@
                             <div class="card-body">
                                 <h3 class="card-title">Casa desamueblada en Puente Piedra | $40,200</h3>
                                 <p class="card-text">Casa en necesidad de renovación en un barrio tranquilo con un gran
-                                    potencial. La casa tiene una distribución clásica con tres dormitorios y dos baños, así como
-                                    una cocina y un comedor separados y una amplia sala de estar. El patio trasero es espacioso
-                                    y ofrece un gran espacio para jardinería y entretenimiento. Esta propiedad es perfecta para
+                                    potencial. La casa tiene una distribución clásica con tres dormitorios y dos baños,
+                                    así como
+                                    una cocina y un comedor separados y una amplia sala de estar. El patio trasero es
+                                    espacioso
+                                    y ofrece un gran espacio para jardinería y entretenimiento. Esta propiedad es
+                                    perfecta para
                                     alguien que busca una casa asequible con un gran potencial de revalorización.</p>
                                 <p class="card-text"><small class="text-muted">Publicado hace 5 horas | 5
                                         solicitudes pendientes</small></p>
@@ -470,10 +499,14 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h3 class="card-title">Departamento amoblado en Santiago de Surco | $700 mensuales</h3>
-                                <p class="card-text">Departamento pequeño de un dormitorio pero encantador, se encuentra en una ciudad
-                                    universitaria en el centro de la ciudad. El inmueble cuenta con una sala de estar con chimenea,
-                                    una cocina y comedor separados, y un baño completo. El patio trasero es pequeño pero privado
-                                    y ofrece un espacio para relajarse al aire libre. El precio se ha reducido para reflejar el
+                                <p class="card-text">Departamento pequeño de un dormitorio pero encantador, se encuentra
+                                    en una ciudad
+                                    universitaria en el centro de la ciudad. El inmueble cuenta con una sala de estar
+                                    con chimenea,
+                                    una cocina y comedor separados, y un baño completo. El patio trasero es pequeño pero
+                                    privado
+                                    y ofrece un espacio para relajarse al aire libre. El precio se ha reducido para
+                                    reflejar el
                                     tamaño más pequeño del departamento.</p>
                                 <p class="card-text"><small class="text-muted">Publicado hace 8 horas | 9
                                         solicitudes pendientes</small></p>
@@ -555,10 +588,14 @@
                             <div class="card-body">
                                 <h3 class="card-title">Departamento amoblado en Cercado de Lima | $640 mensuales
                                 </h3>
-                                <p class="card-text">Departamento con excelentes vistas pero en una ubicación menos deseable,
-                                    tiene una vista impresionante de la ciudad y cuenta con una cocina abierta y una sala de
-                                    estar con mucha luz natural. Sin embargo, la ubicación no es ideal, ya que está ubicado en
-                                    una calle concurrida y cerca de una zona industrial. El precio se ha reducido para reflejar
+                                <p class="card-text">Departamento con excelentes vistas pero en una ubicación menos
+                                    deseable,
+                                    tiene una vista impresionante de la ciudad y cuenta con una cocina abierta y una
+                                    sala de
+                                    estar con mucha luz natural. Sin embargo, la ubicación no es ideal, ya que está
+                                    ubicado en
+                                    una calle concurrida y cerca de una zona industrial. El precio se ha reducido para
+                                    reflejar
                                     la ubicación menos deseable.</p>
                                 <p class="card-text"><small class="text-muted">Publicado hace 10 horas | 12
                                         solicitudes pendientes</small></p>
@@ -702,7 +739,8 @@
         <div class="border-top border-light grid-footer py-2 my-3">
             <div>
                 <p class="text-muted text-center">Desarrollado por<span>: Alexandra Ramirez.</span></p>
-                <p class="text-muted text-center">Curso<span>: Desarrollo Web</span> en <a class="text-dark" target="_blank" href="https://www.coderhouse.com.pe/">Coderhouse</a></p>
+                <p class="text-muted text-center">Curso<span>: Desarrollo Web</span> en <a class="text-dark"
+                        target="_blank" href="https://www.coderhouse.com.pe/">Coderhouse</a></p>
             </div>
         </div>
 
