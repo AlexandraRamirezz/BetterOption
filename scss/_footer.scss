@@ -8,6 +8,10 @@
 }
 .nav-icono {
 	color: $color-black;
+
+	&:hover {
+		color: $color-bloque-trasp;
+	}
 }
 .fondo-footer {
 	background-color: $color-cuaternario;

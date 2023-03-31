@@ -255,6 +255,9 @@ span {
 .nav-icono {
   color: black;
 }
+.nav-icono:hover {
+  color: rgba(0, 0, 0, 0.648);
+}
 
 .fondo-footer {
   background-color: rgba(109, 109, 107, 0.1254901961);
