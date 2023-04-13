@@ -368,6 +368,12 @@ span {
     margin-left: 0px;
   }
 }
+@media (min-width: 576px) and (max-width: 991px) {
+  .img-personal {
+    width: 160px;
+    border: 1px solid rgba(109, 109, 107, 0.1254901961);
+  }
+}
 /* vista desk */
 @media (min-width: 901px) {
   .inicio-fondo {
